@@ -4,6 +4,7 @@
 /*
 * ABSTRACT: SINGULAR shell grammatik
 */
+%define api.pure
 %{
 
 #include <stdio.h>

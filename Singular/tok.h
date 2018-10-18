@@ -12,7 +12,7 @@
 #include "Singular/grammar.h"
 #endif
 
-extern int      yylineno;
+// extern int      yylineno;
 extern char     my_yylinebuf[80];
 
 #if defined(__cplusplus)

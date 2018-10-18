@@ -42,7 +42,7 @@ enum noeof_t
   noeof_string
 };  /* for scanner.l */
 
-extern int yylineno;
+// extern int yylineno;
 extern char my_yylinebuf[80];
 extern const char sNoName_fe[];
 
