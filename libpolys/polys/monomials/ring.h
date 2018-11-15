@@ -823,7 +823,6 @@ void pISUpdateComponents(ideal F, const intvec *const V, const int MIN, const ri
 BOOLEAN rCheckIV(const intvec *iv);
 int rTypeOfMatrixOrder(const intvec *order);
 
-void rDelete(ring r); // To be used instead of rKill!
-
-extern omBin sip_sring_bin;
+void rDelete(ring r);
+EXTERN_VAR omBin sip_sring_bin;
 #endif

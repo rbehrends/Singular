@@ -16,6 +16,8 @@
 #ifndef MISC_AUXILIARY_H
 #define MISC_AUXILIARY_H
 
+#include "../../Singular/globaldefs.h"
+
 /* please include libpolysconfig.h exclusively via <misc/auxiliary.h> and before any other header */
 #include "libpolysconfig.h"
 
@@ -419,5 +421,3 @@ inline A cast_vptr_to_A( void * p )
 #endif
 
 #endif
-/* MISC_AUXILIARY_H */
-

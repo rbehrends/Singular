@@ -834,8 +834,7 @@ BOOLEAN count_Factors(ideal I, intvec *v,int j, poly &f, poly fac, const ring r)
   Off(SW_RATIONAL);
   return TRUE;
 }
-
-int singclap_factorize_retry;
+VAR int singclap_factorize_retry;
 
 ideal singclap_factorize ( poly f, intvec ** v , int with_exps, const ring r)
 /* destroys f, sets *v */
@@ -1956,4 +1955,3 @@ ideal singclap_absFactorize ( poly f, ideal & mipos, intvec ** exps, int & numFa
 }
 
 #endif /* HAVE_NTL */
-

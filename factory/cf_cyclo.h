@@ -38,4 +38,3 @@ bool isPrimitive (const Variable& alpha, ///< [in] some algebraic variable
                  );
 
 #endif
-

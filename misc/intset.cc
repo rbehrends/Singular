@@ -2,9 +2,8 @@
 #include <sstream>
 #include <unordered_set>
 
-typedef std::unordered_set<int> si_intset; /* intset is already defined in std*/
-
-static int si_intset_type_id = -1;
+typedef std::unordered_set<int> si_intset;
+STATIC_VAR int si_intset_type_id = -1;
 
 void* si_intset_Init(blackbox *b)
 {

@@ -12,8 +12,7 @@
 
 #include "gfanlib/gfanlib.h"
 #include "gfanlib/gfanlib_q.h"
-
-int polytopeID;
+VAR int polytopeID;
 
 std::string bbpolytopeToString(gfan::ZCone const &c)
 {

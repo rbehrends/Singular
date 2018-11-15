@@ -173,4 +173,3 @@ ratFactorize (const CanonicalForm& G,          ///<[in] a multivariate poly
 #endif
 
 #endif
-

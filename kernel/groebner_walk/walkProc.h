@@ -6,4 +6,3 @@ ideal fractalWalkProc(leftv first, leftv second);
 WalkState walkConsistency( ring sring, ring dring, int * vperm );
 WalkState fractalWalkConsistency( ring sring, ring dring, int * vperm );
 #endif
-

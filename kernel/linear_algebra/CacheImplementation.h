@@ -433,4 +433,3 @@ Cache<KeyClass, ValueClass>::Cache(const Cache& c)
 }
 
 #endif
-/* CACHE_IMPLEMENTATION_H */

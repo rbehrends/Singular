@@ -487,9 +487,3 @@ findUniProc( leftv result, leftv first )
 
     return FALSE;
 }
-// ----------------------------------------------------------------------------
-// Local Variables: ***
-// compile-command: "make Singular" ***
-// page-delimiter: "^\\(\\|//!\\)" ***
-// fold-internal-margins: nil ***
-// End: ***

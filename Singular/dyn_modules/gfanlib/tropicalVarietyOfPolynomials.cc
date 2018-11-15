@@ -100,31 +100,3 @@ ZConesSortedByDimension tropicalVarietySortedByDimension(const poly g, const rin
   }
   return tropVar;
 }
-
-
-// #ifndef SING_NDEBUG
-// BOOLEAN tropicalVariety00(leftv res, leftv args)
-// {
-//   leftv u = args;
-//   poly g = (poly) u->CopyD();
-//   omUpdateInfo();
-//   Print("usedBytesBefore=%ld\n",om_Info.UsedBytes);
-//   std::set<gfan::ZCone> C = fullTropicalVarietyOfPolynomial(g,currRing);
-//   p_Delete(&g,currRing);
-//   res->rtyp = fanID;
-//   res->data = (char*) toFanStar(C);
-//   return FALSE;
-// }
-// BOOLEAN tropicalVariety01(leftv res, leftv args)
-// {
-//   leftv u = args;
-//   poly g = (poly) u->CopyD();
-//   omUpdateInfo();
-//   Print("usedBytesBefore=%ld\n",om_Info.UsedBytes);
-//   std::set<gfan::ZCone> C = lowerTropicalVarietyOfPolynomial(g,currRing);
-//   p_Delete(&g,currRing);
-//   res->rtyp = fanID;
-//   res->data = (char*) toFanStar(C);
-//   return FALSE;
-// }
-// #endif

@@ -327,9 +327,3 @@ char *complexToStr( gmp_complex & c, const  unsigned int oprec, const coeffs src
 bool complexNearZero( gmp_complex * c, int digits );
 
 #endif /* MPR_COMPLEX_H */
-
-// local Variables: ***
-// folded-file: t ***
-// compile-command-1: "make installg" ***
-// compile-command-2: "make install" ***
-// End: ***

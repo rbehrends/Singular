@@ -49,15 +49,7 @@
 #include <netinet/in.h> /* for htons etc.*/
 
 #define SSI_VERSION 12
-// 5->6: changed newstruct representation
-// 6->7: attributes
-// 7->8: qring
-// 8->9: module: added rank
-// 9->10: tokens in grammar.h/tok.h reorganized
-// 10->11: extended ring descr. for named coeffs (not in used until 4.1)
-// 11->12: add rank to ideal/module, add smatrix
-
-link_list ssiToBeClosed=NULL;
+VAR link_list ssiToBeClosed =NULL;
 volatile BOOLEAN ssiToBeClosed_inactive=TRUE;
 
 // forward declarations:
@@ -1854,11 +1846,10 @@ int ssiBatch(const char *host, const char * port)
   /* never reached*/
   exit(0);
 }
-
-static int ssiReserved_P=0;
-static int ssiReserved_sockfd;
+STATIC_VAR int ssiReserved_P =0;
+STATIC_VAR int ssiReserved_sockfd;
 static  struct sockaddr_in ssiResverd_serv_addr;
-static int  ssiReserved_Clients;
+STATIC_VAR int  ssiReserved_Clients;
 int ssiReservePort(int clients)
 {
   if (ssiReserved_P!=0)
@@ -1893,8 +1884,7 @@ int ssiReservePort(int clients)
   ssiReserved_Clients=clients;
   return portno;
 }
-
-extern si_link_extension si_link_root;
+EXTERN_VAR si_link_extension si_link_root;
 si_link ssiCommandLink()
 {
   if (ssiReserved_P==0)
@@ -2143,30 +2133,3 @@ BOOLEAN ssiGetDump(si_link l)
   }
   return FALSE;
 }
-// ----------------------------------------------------------------
-// format
-// 1 int %d
-// 2 string <len> %s
-// 3 number
-// 4 bigint 4 %d or 3 <mpz_t>
-// 5 ring
-// 6 poly
-// 7 ideal
-// 8 matrix
-// 9 vector
-// 10 module
-// 11 command
-// 12 def <len> %s
-// 13 proc <len> %s
-// 14 list %d <elem1> ....
-// 15 setring .......
-// 16 nothing
-// 17 intvec <len> ...
-// 18 intmat
-// 19 bigintmat <r> <c> ...
-// 20 blackbox <name> 1 <len> ...
-// 21 attrib <bit-attrib> <len> <a-name1> <val1>... <data>
-// 22 smatrix
-//
-// 98: verify version: <ssi-version> <MAX_TOK> <OPT1> <OPT2>
-// 99: quit Singular

@@ -1353,13 +1353,3 @@ void simplex::simp3( mprfloat **a, int i1, int k1, int ip, int kp )
     if ( kk-1 != kp ) a[ip+1][kk] *= -piv;
   a[ip+1][kp+1]= piv;
 }
-//<-
-
-//-----------------------------------------------------------------------------
-
-// local Variables: ***
-// folded-file: t ***
-// compile-command-1: "make installg" ***
-// compile-command-2: "make install" ***
-// End: ***
-

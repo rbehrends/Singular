@@ -70,8 +70,7 @@ static smpoly sm_Poly2Smpoly(poly, const ring);
 static poly sm_Smpoly2Poly(smpoly, const ring);
 static BOOLEAN sm_HaveDenom(poly, const ring);
 static number sm_Cleardenom(ideal, const ring);
-
-omBin smprec_bin = omGetSpecBin(sizeof(smprec));
+VAR omBin smprec_bin = omGetSpecBin(sizeof(smprec));
 
 static poly pp_Mult_Coeff_mm_DivSelect_MultDiv(poly p, int &lp, poly m,
                                                poly a, poly b, const ring currRing)
@@ -2314,8 +2313,7 @@ struct smnrec{
   int pos;             // position
   number m;            // the element
 };
-
-static omBin smnrec_bin = omGetSpecBin(sizeof(smnrec));
+STATIC_VAR omBin smnrec_bin = omGetSpecBin(sizeof(smnrec));
 
 /* declare internal 'C' stuff */
 static void sm_NumberDelete(smnumber *, const ring R);

@@ -533,12 +533,7 @@ class MinorValue
     * @see MinorValue::operator< (const MinorValue& mv)
     */
     int rankMeasure5 () const;
-
-    /**
-    * private store for the current value ranking strategy;
-    * This member can be set using MinorValue::SetRankingStrategy (const int).
-    */
-    static int g_rankingStrategy;
+STATIC_VAR int g_rankingStrategy;
 
     /**
     * Accessor for the static private field g_rankingStrategy.
@@ -866,4 +861,3 @@ class PolyMinorValue : public MinorValue
 };
 
 #endif
-/* MINOR_H */

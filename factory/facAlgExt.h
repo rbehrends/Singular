@@ -38,4 +38,3 @@ AlgExtFactorize (const CanonicalForm& F, ///<[in] a univariate polynomial
                 );
 
 #endif
-

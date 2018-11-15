@@ -41,17 +41,8 @@
 #endif
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 #if defined(HAVE_DL)
-
-/*****************************************************************************
- *
- * General section
- * These are just wrappers around the repsective dynl_* calls
- * which look for the binary in the bin_dir of Singular and ommit warnings if
- * somethings goes wrong
- *
- *****************************************************************************/
-static BOOLEAN warn_handle = FALSE;
-static BOOLEAN warn_proc = FALSE;
+STATIC_VAR BOOLEAN warn_handle = FALSE;
+STATIC_VAR BOOLEAN warn_proc = FALSE;
 #ifndef DL_TAIL
 #define DL_TAIL ".so"
 //#define DL_TAIL "_g.so"
@@ -145,8 +136,7 @@ extern "C" {
 #if defined(HAVE_ELF_SYSTEM)
 #include <dlfcn.h>
 #define DL_IMPLEMENTED
-
-static void* kernel_handle = NULL;
+STATIC_VAR void* kernel_handle = NULL;
 int dynl_check_opened(
   char *filename    /* I: filename to check */
   )
@@ -243,7 +233,7 @@ int dynl_close (void *handle)
 
 const char *dynl_error()
 {
-  static char errmsg[] = "shl_load failed";
+STATIC_VAR char errmsg[] = "shl_load failed";
 
   return errmsg;
 }
@@ -276,7 +266,7 @@ int dynl_close (void *handle)
 
 const char *dynl_error()
 {
-  static char errmsg[] = "support for dynamic loading not implemented";
+STATIC_VAR char errmsg[] = "support for dynamic loading not implemented";
   return errmsg;
 }
 #endif

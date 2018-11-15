@@ -31,26 +31,17 @@
 #endif
 
 #define fePutChar(c) fputc((unsigned char)(c),stdout)
-/*0 implementation */
-
-
-char fe_promptstr[] ="  ";
-FILE *File_Profiling=NULL;
+VAR char fe_promptstr[] ="  ";
+VAR FILE *File_Profiling =NULL;
 
 // line buffer for reading:
 // minimal value for MAX_FILE_BUFFER: 4*4096 - see Tst/Long/gcd0_l.tst
 // this is an upper limit for the size of monomials/numbers read via the interpreter
 #define MAX_FILE_BUFFER 4*4096
-
-/**************************************************************************
-* handling of 'voices'
-**************************************************************************/
-
-extern int blocknest; /* scaner.l internal */
-
-int    yy_noeof=0;     // the scanner "state"
-int    yy_blocklineno; // to get the lineno of the block start from scanner
-Voice  *currentVoice = NULL;
+EXTERN_VAR int blocknest;
+VAR int    yy_noeof =0;
+VAR int    yy_blocklineno;
+VAR Voice  *currentVoice = NULL;
 // FILE   *feFilePending; /*temp. storage for grammar.y */
 
 //static const char * BT_name[]={"BT_none","BT_break","BT_proc","BT_example",
@@ -682,4 +673,3 @@ Voice * feInitStdin(Voice *pp)
   return p;
 }
 #endif
-

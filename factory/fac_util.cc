@@ -10,8 +10,8 @@
 #include "canonicalform.h"
 #include "cf_iter.h"
 #include "fac_util.h"
-
-static CanonicalForm PK, PKHALF;
+STATIC_INST_VAR CanonicalForm PK;
+STATIC_INST_VAR CanonicalForm PKHALF;
 
 static CanonicalForm mappk ( const CanonicalForm& );
 
@@ -109,4 +109,3 @@ mappk ( const CanonicalForm & f )
 {
     return mod( f, PK );
 }
-

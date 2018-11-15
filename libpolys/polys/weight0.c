@@ -486,3 +486,4 @@ void wNorm(int *degw, int *lpol, int npol, double *rel)
     r++;
   }
 }
+

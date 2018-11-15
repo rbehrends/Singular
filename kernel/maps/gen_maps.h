@@ -15,4 +15,3 @@ poly p_SubstPoly (poly p, int var, poly image, const ring preimage_r, const ring
 ideal id_SubstPoly (ideal id, int var, poly image, const ring preimage_r, const ring image_r, const nMapFunc nMap);
 
 #endif
-

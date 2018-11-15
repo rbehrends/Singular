@@ -12,21 +12,23 @@
 
 #include "kernel/polys.h"
 #include "kernel/combinatorics/hutil.h"
-
-scfmon hexist, hstc, hrad, hwork;
-scmon hpure, hpur0;
-varset hvar, hsel;
-int  hNexist, hNstc, hNrad, hNvar, hNpure;
-int hisModule;
-monf stcmem, radmem;
-
-// Making a global "security" copy of the allocated exponent vectors
-// is a dirty fix for correct memory disallocation: It would be
-// better, if either the fields of heist are never touched
-// (i.e. changed) except in hInit, or, if hInit would return the
-// "security" copy as well. But then, all the relevant data is held in
-// global variables, so we might do that here, as well.
-static scfmon hsecure= NULL;
+VAR scfmon hexist;
+VAR scfmon hstc;
+VAR scfmon hrad;
+VAR scfmon hwork;
+VAR scmon hpure;
+VAR scmon hpur0;
+VAR varset hvar;
+VAR varset hsel;
+VAR int  hNexist;
+VAR int hNstc;
+VAR int hNrad;
+VAR int hNvar;
+VAR int hNpure;
+VAR int hisModule;
+VAR monf stcmem;
+VAR monf radmem;
+STATIC_VAR scfmon hsecure = NULL;
 
 scfmon hInit(ideal S, ideal Q, int *Nexist, ring tailRing)
 {
@@ -1062,4 +1064,3 @@ scmon hGetpure(scmon p)
   memcpy(pn, p1, (currRing->N) * sizeof(int));
   return pn - 1;
 }
-

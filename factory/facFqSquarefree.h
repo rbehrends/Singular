@@ -146,5 +146,3 @@ maxpthRoot (const CanonicalForm & F, ///< [in] a poly which is a pth power
            );
 
 #endif
-/* FAC_FQ_SQUAREFREE_H */
-

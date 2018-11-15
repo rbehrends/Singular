@@ -15,4 +15,3 @@ struct snumber; typedef struct snumber *   number;
 BOOLEAN nnInitChar(coeffs r, void*);
 
 #endif
-

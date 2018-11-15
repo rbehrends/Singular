@@ -12,6 +12,8 @@
 #ifndef INCL_CF_SWITCHES_H
 #define INCL_CF_SWITCHES_H
 
+#include "../Singular/globaldefs.h"
+
 // #include "config.h"
 
 /** const int CFSwitchesMax
@@ -56,17 +58,6 @@ public:
     /// check if 's' is off
     bool isOff ( int s ) const { return ! switches[s]; }
 };
-/** CFSwitches cf_glob_switches;
- *
- * cf_glob_switches - factory switches.
- *
- * This is the only object of type CFSwitches in factory.  It is
- * used either directly in the low level algorithms or by the
- * functions On(), Off(), isOn() defined in canonicalform.cc.
- *
-**/
-// extern CFSwitches& cf_glob_switches;
-// CFSwitches& cf_glob_switches = CFSwitches::getInstance();
-extern CFSwitches cf_glob_switches;
+EXTERN_INST_VAR CFSwitches cf_glob_switches;
 
 #endif /* ! INCL_CF_SWITCHES_H */

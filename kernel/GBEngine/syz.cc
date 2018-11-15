@@ -1159,4 +1159,3 @@ intvec * syNewBetti(resolvente res, intvec ** weights, int length)
   return result;
 }
 #endif
-

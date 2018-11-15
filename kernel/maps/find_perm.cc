@@ -88,4 +88,3 @@ matrix ma_ApplyPermForMap(const matrix to_map, const ring preimage_r,
   omFreeSize(perm,(preimage_r->N+1)*sizeof(int));
   return m;
 }
-

@@ -11,11 +11,7 @@ namespace CxxTest
     TestSuite::~TestSuite() {}
     void TestSuite::setUp() {}
     void TestSuite::tearDown() {}
-
-    //
-    // Test-aborting stuff
-    //
-    static bool currentAbortTestOnFail = false;
+STATIC_VAR bool currentAbortTestOnFail = false;
 
     bool abortTestOnFail()
     {
@@ -34,11 +30,7 @@ namespace CxxTest
             throw AbortTest();
 #   endif // _CXXTEST_HAVE_EH
     }
-
-    //
-    // Max dump size
-    //
-    static unsigned currentMaxDumpSize = CXXTEST_MAX_DUMP_SIZE;
+STATIC_VAR unsigned currentMaxDumpSize = CXXTEST_MAX_DUMP_SIZE;
 
     unsigned maxDumpSize()
     {

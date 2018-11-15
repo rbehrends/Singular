@@ -40,10 +40,9 @@ enum noeof_t
   noeof_comment,
   noeof_procname,
   noeof_string
-};  /* for scanner.l */
-
-extern int yylineno;
-extern char my_yylinebuf[80];
+};
+EXTERN_VAR int yylineno;
+EXTERN_VAR char my_yylinebuf[80];
 extern const char sNoName_fe[];
 
 #ifdef __cplusplus
@@ -87,8 +86,7 @@ class Voice
   feBufferTypes Typ();
   void Next();
 } ;
-
-extern Voice  *currentVoice;
+EXTERN_VAR Voice  *currentVoice;
 
 Voice * feInitStdin(Voice *pp);
 
@@ -105,4 +103,3 @@ void    myyoldbuffer(void * oldb);
 
 #endif
 #endif
-

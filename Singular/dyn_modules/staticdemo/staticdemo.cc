@@ -12,4 +12,3 @@ class SModulFunctions;
 #include "reporter/reporter.h"
 
 extern "C" int SI_MOD_INIT(staticdemo)(SModulFunctions*){ PrintS("init of staticdemo\n"); return (MAX_TOK); }
-

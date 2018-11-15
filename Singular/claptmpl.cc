@@ -133,4 +133,3 @@ template class std::_List_base<PolyMinorValue, std::allocator<PolyMinorValue> >;
 
 template class Cache<MinorKey, IntMinorValue>;
 template class Cache<MinorKey, PolyMinorValue>;
-

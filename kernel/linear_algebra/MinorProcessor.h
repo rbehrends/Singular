@@ -766,4 +766,3 @@ class PolyMinorProcessor : public MinorProcessor
 };
 
 #endif
-/* MINOR_PROCESSOR_H */

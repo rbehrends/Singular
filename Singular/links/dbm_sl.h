@@ -12,4 +12,3 @@ LINKAGE BOOLEAN dbWrite(si_link l, leftv v);
 LINKAGE leftv dbRead1(si_link l);
 LINKAGE leftv dbRead2(si_link l, leftv key);
 LINKAGE BOOLEAN dbClose(si_link l);
-

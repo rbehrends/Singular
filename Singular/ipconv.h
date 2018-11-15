@@ -13,4 +13,3 @@ int iiTestConvert (int inputType, int outputType, const struct sConvertTypes *dC
 BOOLEAN iiConvert (int inputType, int outputType, int index,
                    leftv input, leftv output, const struct sConvertTypes *dCT=dConvertTypes);
 #endif
-

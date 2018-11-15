@@ -546,9 +546,3 @@ poly fglmLinearCombination( ideal source, poly monset )
     STICKYPROT( "\n" );
     return comb;
 }
-
-// Local Variables: ***
-// compile-command: "make Singular" ***
-// page-delimiter: "^\\(\\|//!\\)" ***
-// fold-internal-margins: nil ***
-// End: ***

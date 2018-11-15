@@ -80,20 +80,24 @@
 
 #include <cmath>
 #include "misc/mylimits.h"
-
-int nstep;
+VAR int nstep;
 
 extern BOOLEAN ErrorCheck();
-
-extern BOOLEAN pSetm_error;
+EXTERN_VAR BOOLEAN pSetm_error;
 
 void Set_Error( BOOLEAN f) { pSetm_error=f; }
-
-BOOLEAN Overflow_Error =  FALSE;
+VAR BOOLEAN Overflow_Error =  FALSE;
 
 #ifdef TIME_TEST
-clock_t xtif, xtstd, xtlift, xtred, xtnw;
-clock_t xftostd, xtextra, xftinput, to;
+VAR clock_t xtif;
+VAR clock_t xtstd;
+VAR clock_t xtlift;
+VAR clock_t xtred;
+VAR clock_t xtnw;
+VAR clock_t xftostd;
+VAR clock_t xtextra;
+VAR clock_t xftinput;
+VAR clock_t to;
 #endif
 
 /****************************
@@ -1507,12 +1511,7 @@ intvec* MivUnit(int nV)
   }
   return(ivM);
 }
-
-
-/************************************************************************
-*  compute a perturbed weight vector of a matrix order w.r.t. an ideal  *
-*************************************************************************/
-int Xnlev;
+VAR int Xnlev;
 intvec* Mfpertvector(ideal G, intvec* ivtarget)
 {
   int i, j, nG = IDELEMS(G);
@@ -4505,13 +4504,12 @@ static intvec* NewVectorlp(ideal I)
   delete iv_wlp;
   return result;
 }
-
-int ngleich;
-intvec* Xsigma;
-intvec* Xtau;
-int xn;
-intvec* Xivinput;
-intvec* Xivlp;
+VAR int ngleich;
+VAR intvec* Xsigma;
+VAR intvec* Xtau;
+VAR int xn;
+VAR intvec* Xivinput;
+VAR intvec* Xivlp;
 
 
 /********************************
@@ -6927,8 +6925,7 @@ ideal Mprwalk(ideal Go, intvec* orig_M, intvec* target_M, int weight_rad,
   }
   return(Eresult);
 }
-
-intvec* XivNull;
+VAR intvec* XivNull;
 
 /*****************************
  * define a matrix (1 ... 1) *
@@ -6944,10 +6941,9 @@ intvec* MMatrixone(int nV)
 
   return(ivM);
 }
-
-int nnflow;
-int Xcall;
-int Xngleich;
+VAR int nnflow;
+VAR int Xcall;
+VAR int Xngleich;
 
 /***********************************************************************
  * Perturb the start weight vector at the top level, i.e. nlev = 1     *

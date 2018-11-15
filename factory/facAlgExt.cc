@@ -404,4 +404,3 @@ CFFList AlgExtFactorize (const CanonicalForm& F, const Variable& alpha)
   if (save_rat) Off(SW_RATIONAL);
   return factors;
 }
-

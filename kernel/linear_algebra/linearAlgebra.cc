@@ -1596,4 +1596,3 @@ bool luSolveViaLDUDecomp(const matrix pMat, const matrix lMat,
 
   return isSolvable;
 }
-

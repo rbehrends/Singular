@@ -1208,4 +1208,3 @@ ideal k_sca_mora(const ideal F, const ideal Q, const intvec */*w*/, const intvec
 
   return (strat->Shdl);
 }
-

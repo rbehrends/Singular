@@ -34,8 +34,7 @@ public:
   sBucketPoly   buckets[BIT_SIZEOF_LONG - 3];
 }
 ;
-
-static omBin sBucket_bin = omGetSpecBin(sizeof(sBucket));
+STATIC_VAR omBin sBucket_bin = omGetSpecBin(sizeof(sBucket));
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -465,4 +464,3 @@ void sBucketPrint(sBucket_pt bucket)
 {
   p_Write0(sBucketPeek(bucket),sBucketGetRing(bucket));
 }
-

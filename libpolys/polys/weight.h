@@ -8,8 +8,7 @@
 */
 
 #include "polys/monomials/ring.h"
-
-extern short * ecartWeights;
+EXTERN_VAR short * ecartWeights;
 //extern pFDegProc pFDegOld;
 //extern pLDegProc pLDegOld;
 
@@ -30,4 +29,3 @@ extern "C" double wFunctionalBuch(int *degw, int *lpol, int npol,
 void wCall(poly* s, int sl, int *x, double wNsqr, const ring R);
 
 #endif
-

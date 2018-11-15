@@ -47,7 +47,3 @@ int F1(
 
 
 #endif
-/* TEMPLATE_FOR_C_H */
-
-/* Vi-modeline: vim: filetype=c:syntax:shiftwidth=2:tabstop=8:textwidth=0:expandtab
-*/

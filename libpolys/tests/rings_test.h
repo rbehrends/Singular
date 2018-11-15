@@ -32,13 +32,7 @@ class MyGlobalPrintingFixture : public GlobalPrintingFixture
       return true;
     }
 };
-
-
-//
-// We can rely on this file being included exactly once
-// and declare this global variable in the header file.
-//
-static MyGlobalPrintingFixture globalPrintingFixture;
+STATIC_INST_VAR MyGlobalPrintingFixture globalPrintingFixture;
 
 
 namespace
@@ -236,4 +230,3 @@ public:
      rDelete(r);
    }
 };
-

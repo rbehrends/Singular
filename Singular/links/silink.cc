@@ -29,20 +29,13 @@
 #include "Singular/links/slInit.h"
 #include "Singular/ipshell.h"
 #include "feOpt.h"
-
-// #ifdef HAVE_DBM
-// #ifdef __CYGWIN__
-// #define USE_GDBM
-// #endif
-// #endif
-
-omBin s_si_link_extension_bin = omGetSpecBin(sizeof(s_si_link_extension));
-omBin sip_link_bin = omGetSpecBin(sizeof(sip_link));
-omBin ip_link_bin = omGetSpecBin(sizeof(ip_link));
+VAR omBin s_si_link_extension_bin = omGetSpecBin(sizeof(s_si_link_extension));
+VAR omBin sip_link_bin = omGetSpecBin(sizeof(sip_link));
+VAR omBin ip_link_bin = omGetSpecBin(sizeof(ip_link));
 
 /* ====================================================================== */
 static si_link_extension slTypeInit(si_link_extension s, const char* type);
-si_link_extension si_link_root=NULL;
+VAR si_link_extension si_link_root =NULL;
 
 BOOLEAN slInit(si_link l, char *istr)
 {
@@ -441,4 +434,3 @@ static si_link_extension slTypeInit(si_link_extension s, const char* type)
   }
   return s->next;
 }
-

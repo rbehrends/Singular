@@ -8995,6 +8995,3 @@ extBiFactorize (const CanonicalForm& F, const ExtensionInfo& info)
 }
 
 #endif
-/* HAVE_NTL */
-
-

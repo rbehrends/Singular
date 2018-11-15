@@ -136,4 +136,3 @@ extern "C" {
 #define PVIRT_INT(msg) = 0
 #define PVIRT_CHARCC(msg) = 0
 #endif /* NOASSERT */
-/* }}} */

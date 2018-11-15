@@ -84,9 +84,3 @@ typedef double mprfloat;
 #define ST_VANDER_STEP "."
 
 #endif
-
-// local Variables: ***
-// folded-file: t ***
-// compile-command-1: "make installg" ***
-// compile-command-2: "make install" ***
-// End: ***

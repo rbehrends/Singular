@@ -532,10 +532,3 @@ number fglmVector::clearDenom ()
   }
   return theLcm;
 }
-
-// ----------------------------------------------------------------------------
-// Local Variables: ***
-// compile-command: "make Singular" ***
-// page-delimiter: "^\\(\\|//!\\)" ***
-// fold-internal-margins: nil ***
-// End: ***

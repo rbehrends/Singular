@@ -42,6 +42,3 @@
      int a2,  ///< [in] some int
      int & r2 ///< [out] integer result
          );
-
-
-// Vi-modeline: vim: filetype=c:syntax:shiftwidth=2:tabstop=8:textwidth=0:expandtab

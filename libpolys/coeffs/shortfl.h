@@ -31,4 +31,3 @@ BOOLEAN nrInitChar(coeffs r, void*);
 SI_FLOAT  nrFloat(number n);
 
 #endif
-

@@ -16,4 +16,3 @@ BOOLEAN ngcInitChar(coeffs r, void*);
 
 void ngcSetChar(const coeffs r);
 #endif
-/* GMPCOMPLEX_H */

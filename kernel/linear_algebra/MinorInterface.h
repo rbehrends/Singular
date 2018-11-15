@@ -102,4 +102,3 @@ ideal getMinorIdealHeuristic (const matrix m, const int minorSize,
                               const bool allDifferent);
 
 #endif
-/* MINOR_INTERFACE_H */

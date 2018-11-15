@@ -84,8 +84,7 @@ typedef IEnumerator<number> ICoeffsEnumerator;
 /// goes over coeffs given by the ICoeffsEnumerator and changes them.
 /// Additionally returns a number;
 typedef void (*nCoeffsEnumeratorFunc)(ICoeffsEnumerator& numberCollectionEnumerator, number& output, const coeffs r);
-
-extern omBin rnumber_bin;
+EXTERN_VAR omBin rnumber_bin;
 
 #define FREE_RNUMBER(x) omFreeBin((void *)x, rnumber_bin)
 #define ALLOC_RNUMBER() (number)omAllocBin(rnumber_bin)
@@ -1014,4 +1013,3 @@ static FORCE_INLINE void number2mpz(number n, coeffs c, mpz_t m){ n_MPZ(m, n, c)
 static FORCE_INLINE number mpz2number(mpz_t m, coeffs c){ return n_InitMPZ(m, c); }
 
 #endif
-

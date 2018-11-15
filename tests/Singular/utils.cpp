@@ -8,4 +8,3 @@ double Time ()
 
   return tv.tv_sec + (tv.tv_usec / 1.0e6);
 }
-

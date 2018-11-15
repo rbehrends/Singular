@@ -10,8 +10,7 @@ class weightOverflowException: public std::exception
     return "int overflow in a weight vector";
   }
 };
-
-extern weightOverflowException weightOverflow;
+EXTERN_INST_VAR weightOverflowException weightOverflow;
 
 class exponentOverflowException: public std::exception
 {
@@ -20,7 +19,6 @@ class exponentOverflowException: public std::exception
     return "int overflow in an exponent";
   }
 };
-
-extern exponentOverflowException exponentOverflow;
+EXTERN_INST_VAR exponentOverflowException exponentOverflow;
 
 #endif

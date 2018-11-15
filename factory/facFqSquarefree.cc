@@ -354,4 +354,3 @@ sqrfPart (const CanonicalForm& F, CanonicalForm& pthPower,
   result= M (result);
   return result;
 }
-

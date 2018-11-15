@@ -176,5 +176,3 @@ public:
 };
 
 #endif
-/* DEGREE_PATTERN_H */
-

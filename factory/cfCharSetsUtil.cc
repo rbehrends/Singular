@@ -961,4 +961,3 @@ contract (const ListCFList& cs)
   }
   return Difference (cs,ts);
 }
-

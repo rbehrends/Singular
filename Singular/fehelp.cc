@@ -76,19 +76,9 @@ static BOOLEAN heGenInit(int,int);    static void heGenHelp(heEntry hentry,int);
                                       static void heBuiltinHelp(heEntry hentry,int);
 static BOOLEAN heDummyInit(int,int);   static void heDummyHelp(heEntry hentry,int);
 static BOOLEAN heEmacsInit(int,int);   static void heEmacsHelp(heEntry hentry,int);
-
-static heBrowser heCurrentHelpBrowser = NULL;
-static int heCurrentHelpBrowserIndex= -1;
-
-
-/*****************************************************************
- *
- * Definition: available help browsers
- *
- *****************************************************************/
-// order is important -- first possible help is chosen
-// moved to LIB/help.cnf
-static heBrowser_s *heHelpBrowsers=NULL;
+STATIC_VAR heBrowser heCurrentHelpBrowser = NULL;
+STATIC_VAR int heCurrentHelpBrowserIndex = -1;
+STATIC_VAR heBrowser_s *heHelpBrowsers =NULL;
 
 /*****************************************************************
  *
@@ -707,7 +697,7 @@ static BOOLEAN heOnlineHelp(char* s)
        ||
        ((fp=feFopen(str,"rb", libnamebuf))!=NULL)))
   {
-    extern FILE *yylpin;
+EXTERN_VAR FILE *yylpin;
     lib_style_types lib_style; // = OLD_LIBSTYLE;
 
     yylpin = fp;
@@ -765,14 +755,7 @@ static long heKeyChksum(char* key)
   }
   return 0;
 }
-
-/*****************************************************************
- *
- * Implementation : Help Browsers
- *
- *****************************************************************/
-
-static BOOLEAN feHelpCalled = FALSE;
+STATIC_VAR BOOLEAN feHelpCalled = FALSE;
 
 static void heBrowserHelp(heEntry hentry)
 {
@@ -1171,4 +1154,3 @@ static int singular_manual(char *str, BOOLEAN isIndexEntry)
   }
   return HELP_OK;
 }
-/*************************************************/

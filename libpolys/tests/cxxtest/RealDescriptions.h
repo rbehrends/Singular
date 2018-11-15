@@ -74,8 +74,7 @@ namespace CxxTest
         unsigned _line;
         const char *_suiteName;
         List *_tests;
-
-        static List _suites;
+STATIC_INST_VAR List _suites;
         friend class RealWorldDescription;
     };
 
@@ -220,4 +219,3 @@ namespace CxxTest
 }
 
 #endif // __cxxtest__RealDescriptions_h__
-

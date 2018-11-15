@@ -269,5 +269,3 @@ ideal idrMoveR_NoSort(ideal &id, ring src_r, ring dest_r)
   res =  idrMove(id, src_r, dest_r, prproc);
   return res;
 }
-
-

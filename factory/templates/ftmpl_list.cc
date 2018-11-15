@@ -723,4 +723,3 @@ bool find (const List<T> & F, const T& t, int (*ecmpf)( const T&, const T& ))
   }
   return false;
 }
-

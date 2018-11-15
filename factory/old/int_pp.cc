@@ -406,4 +406,3 @@ InternalPrimePower::sign () const
 {
     return mpz_sgn( thempi );
 }
-//}}}

@@ -795,4 +795,3 @@ LCHeuristic4 (const CFList& oldBiFactors,   ///<[in] bivariate factors
              );
 
 #endif
-/* FAC_FQ_FACTORIZE_H */

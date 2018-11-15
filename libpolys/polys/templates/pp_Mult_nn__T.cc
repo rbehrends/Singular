@@ -56,5 +56,3 @@ LINKAGE poly pp_Mult_nn__T(poly p, const number n, const ring r)
   p_Test(rp.next, r);
   return rp.next;
 }
-
-

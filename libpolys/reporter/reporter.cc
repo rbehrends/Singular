@@ -40,27 +40,23 @@
 // minimal value for MAX_FILE_BUFFER: 4*4096 - see Tst/Long/gcd0_l.tst
 // this is an upper limit for the size of monomials/numbers read via the interpreter
 #define MAX_FILE_BUFFER 4*4096
-static long feBufferLength=0;
-static char * feBuffer=NULL;
-static long feBufferLength_save[8];
-static char * feBuffer_save[8];
-static int feBuffer_cnt=0;
-static char * feBufferStart_save[8];
-
-
-char *  feErrors=NULL;
-int     feErrorsLen=0;
-BOOLEAN feWarn = TRUE;
-BOOLEAN feOut = TRUE;
+STATIC_VAR long feBufferLength =0;
+STATIC_VAR char * feBuffer =NULL;
+STATIC_VAR long feBufferLength_save[8];
+STATIC_VAR char * feBuffer_save[8];
+STATIC_VAR int feBuffer_cnt =0;
+STATIC_VAR char * feBufferStart_save[8];
+VAR char *  feErrors =NULL;
+VAR int     feErrorsLen =0;
+VAR BOOLEAN feWarn = TRUE;
+VAR BOOLEAN feOut = TRUE;
 
 //void (*WerrorS_callback)(const char *s) = NULL;
 
 const char feNotImplemented[]="not implemented";
-
-int feProt = FALSE;
-FILE*   feProtFile;
-
-static char * feBufferStart;
+VAR int feProt = FALSE;
+VAR FILE*   feProtFile;
+STATIC_VAR char * feBufferStart;
   /* only used in StringSet(S)/StringAppend(S)*/
 void StringAppend(const char *fmt, ...)
 {
@@ -242,11 +238,8 @@ void Warn(const char *fmt, ...)
   omFreeSize(s,256);
   va_end(ap);
 }
-
-
-// some routines which redirect the output of print to a string
-static char* sprint = NULL;
-static char* sprint_backup = NULL;
+STATIC_VAR char* sprint = NULL;
+STATIC_VAR char* sprint_backup = NULL;
 void SPrintStart()
 {
   if (sprint!=NULL)

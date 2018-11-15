@@ -110,4 +110,3 @@ int probIrredTest (const CanonicalForm& F, double error)
   else
     return -1;
 }
-

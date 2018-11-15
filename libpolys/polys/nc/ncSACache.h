@@ -125,5 +125,3 @@ class CSpecialPairCacheHash: public CCacheHash<int>
 
 
 #endif // GRING_SA_CACHEHASH_H
-
-

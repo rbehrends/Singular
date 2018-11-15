@@ -73,4 +73,3 @@ bool
 isInseparable (const CFList & Astar);
 
 #endif
-

@@ -8,8 +8,7 @@
  */
 
 #include "kernel/structs.h"
-
-extern char    prompt_char; /*1 either '>' or '.'*/
+EXTERN_VAR char    prompt_char; /*1 either '>' or '.'*/
 
 #ifdef __cplusplus
 
@@ -50,4 +49,3 @@ const char *  eati(const char *s, int *i);
 
 #endif
 #endif
-

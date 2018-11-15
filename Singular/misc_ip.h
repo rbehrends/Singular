@@ -71,4 +71,3 @@ void p_SetRingOfLeftv(leftv l, ring r);
 #endif
 
 #endif
-/* MISC_H */

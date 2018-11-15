@@ -51,5 +51,3 @@ LINKAGE poly pp_Mult_Coeff_mm_DivSelect__T(poly p, const poly m, int &shorter,
   p_Test(rp.next, r);
   return rp.next;
 }
-
-

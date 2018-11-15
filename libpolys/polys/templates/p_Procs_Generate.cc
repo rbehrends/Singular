@@ -29,12 +29,18 @@
 #include "polys/templates/p_Procs_Impl.h"
 
 #ifndef p_Procs_Static
-int FieldGeneralProcs = 0,
-  FieldIndepProcs = 0,
-  FieldZpProcs = 0,
-  FieldQProcs = 0,
-  RingGeneralProcs = 0,
-  KernelProcs = 0,
+VAR int FieldGeneralProcs = 0;
+VAR int
+  FieldIndepProcs = 0;
+VAR int
+  FieldZpProcs = 0;
+VAR int
+  FieldQProcs = 0;
+VAR int
+  RingGeneralProcs = 0;
+VAR int
+  KernelProcs = 0;
+VAR int
   UnknownProcs = 0;
 
 // returns 1, if proc should go into kernel, 0 otherwise
@@ -63,8 +69,7 @@ int IsKernelProc(p_Proc proc, p_Field field, p_Length length, p_Ord ord)
 
 #define DoSetProc(what, field, length, ord) \
       GenerateProc(#what, what##_Proc, field, length, ord)
-
-char*** generated_p_procs;
+VAR char*** generated_p_procs;
 
 inline int AlreadyHaveProc(p_Proc proc, p_Field field, p_Length length, p_Ord ord)
 {
@@ -77,9 +82,8 @@ const char* macros_length[] =
 {"p_MemCopy", "p_MemAdd", "p_MemSum", "p_MemDiff", NULL};
 
 const char* macros_length_ord[] = {"p_MemCmp", NULL};
-int DummyProcs = 0;
-
-int NumberOfHaveProcs = 0;
+VAR int DummyProcs = 0;
+VAR int NumberOfHaveProcs = 0;
 
 void AddProc(const char* s_what, p_Proc proc, p_Field field, p_Length length, p_Ord ord)
 {
@@ -337,5 +341,3 @@ int main()
   printf("*\n");
   printf("*******************************************************************/\n");
 }
-
-

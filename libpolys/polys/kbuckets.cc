@@ -38,9 +38,9 @@
 #else
 #define MULTIPLY_BUCKET(B,I)
 #endif
-static omBin kBucket_bin = omGetSpecBin(sizeof(kBucket));
+STATIC_VAR omBin kBucket_bin = omGetSpecBin(sizeof(kBucket));
 #ifdef USE_COEF_BUCKETS
-static int coef_start=1;
+STATIC_VAR int coef_start =1;
 #endif
 //////////////////////////////////////////////////////////////////////////
 ///
@@ -1426,4 +1426,3 @@ int ksCheckCoeff(number *a, number *b, const coeffs r)
   *b = bn;
   return c;
 }
-

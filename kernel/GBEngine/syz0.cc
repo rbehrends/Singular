@@ -1069,4 +1069,3 @@ syStrategy sySchreyer(ideal arg, int maxlength)
   omFreeSize((ADDRESS)fr,(rl /*result->length*/)*sizeof(ideal));
   return result;
 }
-

@@ -238,4 +238,3 @@ int main(          /* main entry to Singular */
   m2_end(0);
   return 0;
 }
-

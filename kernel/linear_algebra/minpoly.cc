@@ -772,4 +772,3 @@ unsigned long modularInverse (long long x, long long p)
 
   return (unsigned long) u1;
 }
-

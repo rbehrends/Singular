@@ -12,5 +12,3 @@
 matrix ma_ApplyPermForMap(const matrix to_map, const ring preimage_r, const ideal image,
   const ring image_r, const nMapFunc nMap);
 #endif
-
-

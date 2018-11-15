@@ -66,9 +66,3 @@ BOOLEAN loNewtonP( leftv res, leftv arg1 );
 BOOLEAN loSimplex( leftv res, leftv args );
 
 #endif
-
-// local Variables: ***
-// folded-file: t ***
-// compile-command-1: "make installg" ***
-// compile-command-2: "make install" ***
-// End: ***

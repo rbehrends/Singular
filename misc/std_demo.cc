@@ -139,4 +139,3 @@ extern "C" int SI_MOD_INIT(std_demo)(SModulFunctions* p)
   PrintS("init of std_demo - type `listvar(Std_demo);` to its contents\n");
   return (MAX_TOK);
 }
-

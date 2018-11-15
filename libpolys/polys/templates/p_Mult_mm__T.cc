@@ -67,5 +67,3 @@ LINKAGE poly p_Mult_mm__T(poly p, const poly m, const ring ri)
   p_Test(q, ri);
   return q;
 }
-
-

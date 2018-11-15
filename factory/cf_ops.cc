@@ -28,19 +28,8 @@
 #include "canonicalform.h"
 #include "variable.h"
 #include "cf_iter.h"
-
-/** static Variable sv_x1, sv_x2;
- *
- * sv_x1, sv_x2 - variables to swap by swapvar() and replacevar.
- *
- * These variables are initialized by swapvar() such that sv_x1 <
- * sv_x2.  They are used by swapvar_between() and swapvar_rec()
- * to swap variables efficiently.
- * Furthermore, sv_x1 and sv_x2 are used by replacevar() and
- * replacevar_between().
- *
-**/
-static Variable sv_x1, sv_x2;
+STATIC_INST_VAR Variable sv_x1;
+STATIC_INST_VAR Variable sv_x2;
 
 /** static void swapvar_between ( const CanonicalForm & f, CanonicalForm & result, const CanonicalForm & term, int expx2 )
  *

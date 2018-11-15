@@ -72,4 +72,3 @@ poly redNF(ideal N,poly p,poly u,int d,intvec *w)
   idDelete(&M0);
   return p0;
 }
-

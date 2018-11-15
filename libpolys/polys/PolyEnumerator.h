@@ -221,7 +221,3 @@ class CRecursivePolyCoeffsEnumerator: public IPolyCoeffsEnumerator
 
 
 #endif
-/* #ifndef POLYENUMERATOR_H */
-
-// Vi-modeline: vim: filetype=c:syntax:shiftwidth=2:tabstop=8:textwidth=0:expandtab
-

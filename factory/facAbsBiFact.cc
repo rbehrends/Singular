@@ -781,5 +781,3 @@ differentevalpoint:
 }
 
 #endif
-
-

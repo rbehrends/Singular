@@ -159,5 +159,3 @@ template List<List<CanonicalForm> > Difference ( const List<List<CanonicalForm> 
 template CanonicalForm prod ( const List<CanonicalForm> & );
 template bool find ( const List<CanonicalForm> &, const CanonicalForm&);
 template bool find ( const List<List<CanonicalForm> >&, const List<CanonicalForm>&);
-// place here your own template stuff, not yet instantiated by factory
-//

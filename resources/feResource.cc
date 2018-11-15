@@ -14,9 +14,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <sys/param.h>
-
-
-char* feArgv0 = NULL;
+VAR char* feArgv0 = NULL;
 
 #ifdef AIX_4
 #ifndef HAVE_PUTENV
@@ -720,4 +718,3 @@ static char* feSprintf(char* s, const char* fmt, int warn)
   *s = '\0';
   return s_in;
 }
-

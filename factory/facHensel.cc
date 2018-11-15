@@ -2840,5 +2840,3 @@ nonMonicHenselLift (const CFList& eval, const CFList& factors,
 }
 
 #endif
-/* HAVE_NTL */
-

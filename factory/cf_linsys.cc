@@ -71,8 +71,7 @@ betterpivot ( const CanonicalForm & oldpivot, const CanonicalForm & newpivot )
     else
         return ( newpivot.lc() < oldpivot.lc() );
 }
-
-bool fuzzy_result;
+VAR bool fuzzy_result;
 
 bool
 linearSystemSolve( CFMatrix & M )

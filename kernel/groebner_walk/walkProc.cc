@@ -352,7 +352,3 @@ fractalWalkConsistency( ring sring, ring dring, int * vperm )
 
     return state;
 }
-
-///////////////////////////////////////////////////////////////////
-
-

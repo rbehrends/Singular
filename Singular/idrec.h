@@ -54,4 +54,3 @@ class idrec
 };
 
 #endif
-

@@ -1392,5 +1392,3 @@ modularIrredTestWithShift (const CanonicalForm& F)
 
   return false;
 }
-
-

@@ -16,4 +16,3 @@ BOOLEAN jjDBPRINT(leftv res, leftv u);
 
 void ipPrint_MA0(matrix m, const char *name);
 #endif
-

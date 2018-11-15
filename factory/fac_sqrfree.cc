@@ -148,4 +148,3 @@ sqrfPart (const CanonicalForm& F)
   result= M (result);
   return result;
 }
-

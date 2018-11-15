@@ -30,5 +30,3 @@ int Template::someMethod( int a, int &o )
   o = a;
   return t;
 };
-
-// Vi-modeline: vim: filetype=c:syntax:shiftwidth=2:tabstop=8:textwidth=0:expandtab

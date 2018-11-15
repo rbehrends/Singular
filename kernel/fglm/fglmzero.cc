@@ -1246,10 +1246,3 @@ FindUnivariateWrapper( ideal source, ideal & destIdeal )
     else
         return FALSE;
 }
-
-// ----------------------------------------------------------------------------
-// Local Variables: ***
-// compile-command: "make Singular" ***
-// page-delimiter: "^\\(\\|//!\\)" ***
-// fold-internal-margins: nil ***
-// End: ***

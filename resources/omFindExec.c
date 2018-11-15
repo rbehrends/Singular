@@ -255,3 +255,4 @@ char* omFindExec (const char *name, char* exec)
 }
 
 #endif /* defined(HAVE_UNISTD_H) && defined(STDC_HEADERS) */
+

@@ -37,4 +37,3 @@ void siInit(char *);
 
 
 #endif // #ifndef LIBSINGULAR__H
-

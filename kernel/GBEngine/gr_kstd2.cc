@@ -1297,4 +1297,3 @@ ideal k_gnc_gr_mora(const ideal F, const ideal Q, const intvec *, const intvec *
 }
 
 #endif
-

@@ -17,9 +17,10 @@
 #include "kernel/combinatorics/hutil.h"
 #include "kernel/combinatorics/hilb.h"
 #include "kernel/combinatorics/stairc.h"
-
-int  hCo, hMu, hMu2;
-omBin indlist_bin = omGetSpecBin(sizeof(indlist));
+VAR int  hCo;
+VAR int hMu;
+VAR int hMu2;
+VAR omBin indlist_bin = omGetSpecBin(sizeof(indlist));
 
 /*0 implementation*/
 
@@ -125,9 +126,7 @@ int  scDimInt(ideal S, ideal Q)
     omFreeSize((ADDRESS)hrad, hNexist * sizeof(scmon));
   return (currRing->N) - hCo;
 }
-
-// independent set
-static scmon hInd;
+STATIC_VAR scmon hInd;
 
 static void hIndSolve(scmon pure, int Npure, scfmon rad, int Nrad,
  varset var, int Nvar)
@@ -274,8 +273,8 @@ intvec * scIndIntvec(ideal S, ideal Q)
     omFreeSize((ADDRESS)hrad, hNexist * sizeof(scmon));
   return Set;
 }
-
-indset ISet, JSet;
+VAR indset ISet;
+VAR indset JSet;
 
 static BOOLEAN hNotZero(scfmon rad, int Nrad, varset var, int Nvar)
 {
@@ -923,11 +922,7 @@ int  scMult0Int(ideal S, ideal Q, const ring tailRing)
   hDegree0(S, Q, tailRing);
   return hMu;
 }
-
-
-// HC
-
-static poly pWork;
+STATIC_VAR poly pWork;
 
 static void hHedge(poly hEdge)
 {
@@ -1068,13 +1063,8 @@ void scComputeHC(ideal S, ideal Q, int ak, poly &hEdge, ring tailRing)
   hDelete(hexist, hNexist);
   pLmFree(pWork);
 }
-
-
-
-//  kbase
-
-static poly last;
-static scmon act;
+STATIC_VAR poly last;
+STATIC_VAR scmon act;
 
 static void scElKbase()
 {

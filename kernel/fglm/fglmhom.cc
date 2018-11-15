@@ -442,12 +442,3 @@ fglmhomog( ring sourceRing, ideal sourceIdeal, ring destRing, ideal & destIdeal 
 } */
 
 #endif
-
-// Questions:
-// Muss ich einen intvec freigeben?
-// ----------------------------------------------------------------------------
-// Local Variables: ***
-// compile-command: "make Singular" ***
-// page-delimiter: "^\\(\\|//!\\)" ***
-// fold-internal-margins: nil ***
-// End: ***

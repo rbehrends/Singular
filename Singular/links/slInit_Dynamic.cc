@@ -20,8 +20,7 @@
 
 #ifdef HAVE_DBM
 #include "dbm_sl.h"
-
-static void* dbm_so_handle = NULL;
+STATIC_VAR void* dbm_so_handle = NULL;
 static void* slInitDBMHandle()
 {
   if (dbm_so_handle == NULL)
@@ -54,4 +53,3 @@ si_link_extension slInitDBMExtension(si_link_extension s)
 
 #endif
 #endif
-

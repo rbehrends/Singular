@@ -56,4 +56,3 @@ number   nChineseRemainder(number *x, number *q,int rl, const coeffs r);
 
 
 #endif /* INCL_FACTORYSING_H */
-

@@ -49,4 +49,3 @@ while (0)
 #else
 #define PR_SORT_POLY(p, d_r, s_r) p = p_SortMerge(p, d_r, d_r->OrdSgn == s_r->OrdSgn)
 #endif
-

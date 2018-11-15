@@ -26,9 +26,7 @@ static int DumpRhs(FILE *fd, idhdl h);
 static BOOLEAN DumpQring(FILE *fd, idhdl h, const char *type_str);
 static BOOLEAN DumpAsciiMaps(FILE *fd, idhdl h, idhdl rhdl);
 static BOOLEAN CollectLibs(char *name, char ***list_of_libs);
-//static BOOLEAN DumpLibs(FILE *fd, char ***list_of_libs);
-
-extern si_link_extension si_link_root;
+EXTERN_VAR si_link_extension si_link_root;
 
 /* =============== ASCII ============================================= */
 BOOLEAN slOpenAscii(si_link l, short flag, leftv /*h*/)

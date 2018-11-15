@@ -86,9 +86,3 @@ Rational operator * ( const Rational&, const Rational& );
 Rational operator / ( const Rational&, const Rational& );
 
 #endif /* GMPRAT_H */
-
-// ----------------------------------------------------------------------------
-//  GMPrat.h
-//  end of file
-// ----------------------------------------------------------------------------
-

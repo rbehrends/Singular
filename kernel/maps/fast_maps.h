@@ -104,5 +104,3 @@ ideal maIdeal_2_Ideal(maideal ideal, ring dest_r);
 ideal fast_map_common_subexp(const ideal map_id,const ring map_r,const ideal image_id,const ring image_r);
 
 #endif
-
-

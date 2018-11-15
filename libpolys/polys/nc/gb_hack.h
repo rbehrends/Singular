@@ -5,9 +5,12 @@
 
 #ifdef PLURAL_INTERNAL_DECLARATIONS
 #include "polys/nc/nc.h"
-
-extern NF_Proc nc_NF;
-extern BBA_Proc gnc_gr_bba, gnc_gr_mora, sca_bba, sca_mora, sca_gr_bba;
+EXTERN_VAR NF_Proc nc_NF;
+EXTERN_VAR BBA_Proc gnc_gr_bba;
+EXTERN_VAR BBA_Proc gnc_gr_mora;
+EXTERN_VAR BBA_Proc sca_bba;
+EXTERN_VAR BBA_Proc sca_mora;
+EXTERN_VAR BBA_Proc sca_gr_bba;
 
 /* the realiziation of the routines above in libkernel:*/
 ideal k_gnc_gr_bba(const ideal, const ideal, const intvec *, const intvec *, kStrategy, const ring _currRing);
@@ -27,4 +30,3 @@ ideal k_sca_gr_bba(const ideal, const ideal, const intvec *, const intvec *, kSt
 
 #endif // HAVE_PLURAL
 #endif // POLYS_NC_GB_HACK_H
-

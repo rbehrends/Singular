@@ -537,5 +537,3 @@ convertFq_nmod_mat_t2FacCFMatrix(const fq_nmod_mat_t m,
 #endif
 
 #endif
-
-

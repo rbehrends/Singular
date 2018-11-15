@@ -46,12 +46,12 @@
 
 // counts sba's reduction steps
 #if SBA_PRINT_REDUCTION_STEPS
-long sba_reduction_steps;
-long sba_interreduction_steps;
+VAR long sba_reduction_steps;
+VAR long sba_interreduction_steps;
 #endif
 #if SBA_PRINT_OPERATIONS
-long sba_operations;
-long sba_interreduction_operations;
+VAR long sba_operations;
+VAR long sba_interreduction_operations;
 #endif
 
 /***********************************************

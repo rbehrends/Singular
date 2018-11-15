@@ -61,7 +61,7 @@ typedef struct denominator_list_s denominator_list_s;
 typedef denominator_list_s *denominator_list;
 
 struct denominator_list_s{number n; denominator_list next;};
-extern denominator_list DENOMINATOR_LIST;
+EXTERN_VAR denominator_list DENOMINATOR_LIST;
 
 class sTObject
 {
@@ -174,8 +174,7 @@ public:
   void wrp();
 #endif
 };
-
-extern int strat_nr;
+EXTERN_VAR int strat_nr;
 
 class sLObject : public sTObject
 {
@@ -262,9 +261,7 @@ public:
   KINLINE void Normalize();
   KINLINE void HeadNormalize();
 };
-
-
-extern int HCord;
+EXTERN_VAR int HCord;
 
 class skStrategy
 #ifdef HAVE_OMALLOC

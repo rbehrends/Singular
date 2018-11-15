@@ -241,5 +241,3 @@ nonMonicHenselLift (const CFList& eval,    ///< [in] a list of polys the last
                    );
 #endif /* HAVE_NTL */
 #endif
-/* FAC_HENSEL_H */
-

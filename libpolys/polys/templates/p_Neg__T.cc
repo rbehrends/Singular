@@ -24,5 +24,3 @@ LINKAGE poly p_Neg__T(poly p, const ring r)
   }
   return q;
 }
-
-

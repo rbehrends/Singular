@@ -44,4 +44,3 @@ int probIrredTest (const CanonicalForm& F, ///< [in] some poly over Z/p
 /*ENDPUBLIC*/
 
 #endif
-

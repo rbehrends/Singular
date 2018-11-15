@@ -175,4 +175,3 @@ ideal maGetPreimage(ring theImageRing, map theMap, ideal id, const ring dst_r)
   rDelete(tmpR);
   return temp1;
 }
-

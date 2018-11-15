@@ -145,4 +145,3 @@ void DegreePattern::refine ()
   delete[] buf;
   return;
 }
-

@@ -34,4 +34,3 @@ boost::python::class_<Intvec>("IntVector")
      .def(boost::python::vector_indexing_suite<Intvec>());
 }
 #endif
-

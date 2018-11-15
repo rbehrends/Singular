@@ -551,7 +551,7 @@ IntegerMatrix SymmetricComplex::boundaryMap(int d)
     for(PolyhedralConeList::const_iterator i=cones.begin();i!=cones.end();i++)
       {
         {
-          static int t;
+STATIC_VAR int t;
   //        log1 fprintf(Stderr,"Adding faces of cone %i\n",t++);
         }
   //      log2 fprintf(Stderr,"Dim: %i\n",i->dimension());

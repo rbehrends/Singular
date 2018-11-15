@@ -694,18 +694,3 @@ bool ppreduceInitially(ideal I, const ring r, const number p)
   idShallowDelete(&G);
   return false;
 }
-
-
-// BOOLEAN ppreduceInitially(leftv res, leftv args)
-// {
-//   leftv u = args;
-//   if ((u != NULL) && (u->Typ() == IDEAL_CMD))
-//   {
-//     ideal I = (ideal) u->CopyD();
-//     (void) ppreduceInitially(I,currRing);
-//     res->rtyp = IDEAL_CMD;
-//     res->data = (char*) I;
-//     return FALSE;
-//   }
-//   return TRUE;
-// }

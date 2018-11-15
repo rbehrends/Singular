@@ -380,4 +380,3 @@ namespace gfan{
 #endif
 
 #endif /* LIB_Z_H_ */
-

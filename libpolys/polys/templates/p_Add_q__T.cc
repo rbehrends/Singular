@@ -83,4 +83,3 @@ LINKAGE poly p_Add_q__T(poly p, poly q, int &Shorter, const ring r)
 #endif
   return pNext(&rp);
 }
-

@@ -17,4 +17,3 @@ ideal f5cMain(ideal i, ring r);
 #endif
 // HAVE_F5C
 #endif
-// F5C_HEADER

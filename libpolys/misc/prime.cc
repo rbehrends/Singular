@@ -67,4 +67,3 @@ int IsPrime(int p)  /* brute force !!!! */
   else if ((p & 1)==0) return iiIsPrime0((unsigned)(p-1));
   return iiIsPrime0((unsigned)(p));
 }
-

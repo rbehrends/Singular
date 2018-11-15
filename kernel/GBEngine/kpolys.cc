@@ -122,4 +122,3 @@ BOOLEAN pCompareChainPart (poly p,poly p1,poly p2,poly lcm, const ring R)
   return FALSE;
 }
 #endif
-

@@ -226,8 +226,7 @@ public:
   }
 
   static idhdl newid(leftv head, idhdl* root) {
-
-    static unsigned int counter = 0;
+STATIC_VAR unsigned int counter = 0;
     char* name = (char*) omAlloc0(512);
     sprintf(name, " :%u:%p:_shared_: ", ++counter, head->data);
     if ((*root) == NULL )
@@ -468,4 +467,3 @@ countedref_init()
 
 
 #endif /*SINGULAR_COUNTEDREF_H_ */
-

@@ -87,4 +87,3 @@ ExtensionInfo::ExtensionInfo (const int nGFDegree, const char cGFName, const
   m_GFName= cGFName;
   m_extension= extension;
 }
-

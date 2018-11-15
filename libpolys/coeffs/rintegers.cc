@@ -26,8 +26,7 @@
 #include <string.h>
 
 #ifdef HAVE_RINGS
-
-omBin gmp_nrz_bin = omGetSpecBin(sizeof(mpz_t));
+VAR omBin gmp_nrz_bin = omGetSpecBin(sizeof(mpz_t));
 
 #if SI_INTEGER_VARIANT == 2
 /*

@@ -60,4 +60,3 @@ class CPolynomialSummator
 
 #endif // ifdef HAVE_SUMMATOR
 #endif // ifndef  SUMMATOR_H
-

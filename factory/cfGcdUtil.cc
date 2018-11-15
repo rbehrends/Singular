@@ -261,21 +261,3 @@ balance_p ( const CanonicalForm & f, const CanonicalForm & q )
     CanonicalForm qh = q / 2;
     return balance_p (f, q, qh);
 }
-
-
-/*static CanonicalForm
-balance ( const CanonicalForm & f, const CanonicalForm & q )
-{
-    Variable x = f.mvar();
-    CanonicalForm result = 0, qh = q / 2;
-    CanonicalForm c;
-    CFIterator i;
-    for ( i = f; i.hasTerms(); i++ ) {
-        c = mod( i.coeff(), q );
-        if ( c > qh )
-            result += power( x, i.exp() ) * (c - q);
-        else
-            result += power( x, i.exp() ) * c;
-    }
-    return result;
-}*/

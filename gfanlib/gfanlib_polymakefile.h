@@ -63,4 +63,3 @@ class PolymakeFile
 }
 
 #endif
-

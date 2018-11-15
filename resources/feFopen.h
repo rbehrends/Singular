@@ -10,6 +10,8 @@
 
 #include <stdio.h>
 
+#include "../Singular/globaldefs.h"
+
 FILE*feFopen(const char *path, const char *mode, char *where=0, short useWerror=0, short path_only=0);
 
 /*
@@ -26,8 +28,7 @@ size_t myfread(void *ptr, size_t size, size_t nmemb, FILE *stream);
 extern "C"
 {
 #endif
-
-extern short errorreported;
+EXTERN_VAR short errorreported;
 void    WerrorS(const char *s);
 extern void (*WerrorS_callback)(const char *s);
 extern void (*PrintS_callback)(const char *s);

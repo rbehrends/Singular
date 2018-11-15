@@ -91,6 +91,3 @@ extern "C" int mod_init(SModulFunctions* psModulFunctions)
     "partition"); // the help string for the module
   return MAX_TOK;
 }
-
-
-

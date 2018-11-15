@@ -684,4 +684,3 @@ resultantZ (const CanonicalForm& A, const CanonicalForm& B, const Variable& x,
   return swapvar (result, X, x);
 }
 #endif
-

@@ -35,4 +35,3 @@ LINKAGE poly p_ShallowCopyDelete__T(poly s_p, const ring r, omBin d_bin)
   pNext(d_p) = NULL;
   return dp.next;
 }
-

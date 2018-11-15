@@ -19,4 +19,3 @@ LINKAGE void p_Delete__T(poly* pp, const ring r)
   }
   *pp = NULL;
 }
-

@@ -45,4 +45,3 @@ intvec* singflint_LLL(intvec* A, intvec* T);
 #endif
 #endif
 #endif
-// LIBPOLYS_POLYS_FLINTCONV_H

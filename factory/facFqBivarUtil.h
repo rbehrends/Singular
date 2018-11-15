@@ -341,5 +341,3 @@ substituteCheck (const CanonicalForm& F, ///<[in] a polynomial
                 );
 
 #endif
-/* FAC_FQ_BIVAR_UTIL_H */
-

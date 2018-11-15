@@ -1,9 +1,12 @@
 #ifndef SIRANDOM_H
 #define SIRANDOM_H
+
+#include "../Singular/globaldefs.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
-extern int siSeed;
+EXTERN_VAR int siSeed;
 int siRand();
 
 typedef int (*siRandProc)();
@@ -17,4 +20,3 @@ int siRandPlus1(int);
 #endif
 
 #endif
-//

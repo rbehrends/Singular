@@ -579,4 +579,3 @@ int similar(
        const number tolerance  /**< [in] tolerance for comparison    */
            );
 #endif
-/* LINEAR_ALGEBRA_H */

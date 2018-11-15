@@ -11,8 +11,7 @@
 #include "kernel/ideals.h"
 #include "kernel/groebner_walk/walkSupport.h"
 #include "kernel/GBEngine/kstd1.h"
-
-extern BOOLEAN overflow_error;
+EXTERN_VAR BOOLEAN overflow_error;
 
 ///////////////////////////////////////////////////////////////////
 //Support functions for Groebner Walk and Fractal Walk
@@ -1191,5 +1190,3 @@ intvec* int64VecToIntVec(int64vec* source)
   delete source;
   return(res);
 }
-
-///////////////////////////////////////////////////////////////////

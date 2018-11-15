@@ -2246,4 +2246,3 @@ InternalPoly::reduceTermList ( termList first, termList redterms, termList & las
     }
     return first;
 }
-

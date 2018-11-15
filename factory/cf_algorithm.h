@@ -58,10 +58,7 @@ void chineseRemainderCached(CFArray &a, CFArray &n, CanonicalForm &xnew, Canonic
 
 
 CanonicalForm Farey ( const CanonicalForm & f, const CanonicalForm & q );
-//}}}
-
-//{{{ function declarations from cf_factor.cc
-extern int singular_homog_flag;
+EXTERN_VAR int singular_homog_flag;
 
 bool isPurePoly(const CanonicalForm & f);
 

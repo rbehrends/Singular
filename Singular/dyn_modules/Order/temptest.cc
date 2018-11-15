@@ -152,4 +152,3 @@ number temp_test2(number a) {
 
     return b;
 }
-

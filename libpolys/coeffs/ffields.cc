@@ -543,9 +543,8 @@ static const char * nfRead (const char *s, number *a, const coeffs r)
 }
 
 int gf_tab_numdigits62 ( int q ); /*factory/gf_tabitil.cc */
-int convertback62 ( char * p, int n ); /*factory/gf_tabitil.cc */
-
-static int nfMinPoly[16];
+int convertback62 ( char * p, int n );
+STATIC_VAR int nfMinPoly[16];
 
 void nfShowMipo(const coeffs r)
 {
@@ -695,11 +694,7 @@ static number nfMapP(number c, const coeffs, const coeffs dst)
 {
   return nfInit((int)((long)c), dst);
 }
-
-/*2
-* map GF(p,n1) -> GF(p,n2), n1 < n2, n1 | n2
-*/
-static int nfMapGG_factor;
+STATIC_VAR int nfMapGG_factor;
 static number nfMapGG(number c, const coeffs src, const coeffs)
 {
   int i=(long)c;
@@ -799,7 +794,7 @@ static char* nfCoeffString(const coeffs r)
 
 static char* nfCoeffName(const coeffs r)
 {
-  static char nfCoeffName_buf[32];
+STATIC_VAR char nfCoeffName_buf[32];
   const char *p=n_ParameterNames(r)[0];
   nfCoeffName_buf[31]='\0';
   snprintf(nfCoeffName_buf,31,"ZZ/%d[%s]",r->m_nfCharQ,p);
@@ -968,4 +963,3 @@ BOOLEAN nfInitChar(coeffs r,  void * parameter)
   return FALSE;
 
 }
-

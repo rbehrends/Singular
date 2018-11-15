@@ -9,8 +9,8 @@
 #include "kernel/structs.h"
 
 #include "gfanlib/gfanlib_zfan.h"
-
-BITSET bitsetSave1, bitsetSave2;
+VAR BITSET bitsetSave1;
+VAR BITSET bitsetSave2;
 
 
 /***

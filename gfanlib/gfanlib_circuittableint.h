@@ -22,8 +22,7 @@ class MVMachineIntegerOverflow: public std::exception
     return "Exception: Overflow (or possible future overflow) in 32/64 bit integers in tropical homotopy.";
   }
 };
-
-extern MVMachineIntegerOverflow MVMachineIntegerOverflow;
+EXTERN_VAR MVMachineIntegerOverflow MVMachineIntegerOverflow;
 
 /*
  * The philosophy here is that if this class overflows, then the computation needs to be restarted. Therefore

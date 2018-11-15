@@ -177,5 +177,3 @@ newtonDivrem (const CanonicalForm& F, ///<[in] univariate poly
 #endif
 
 #endif
-/* FAC_MUL_H */
-

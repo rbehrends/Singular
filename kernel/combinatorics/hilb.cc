@@ -40,10 +40,10 @@
 #include <ctime>
 #include <iostream>
 #endif
-
-static int  **Qpol;
-static int  *Q0, *Ql;
-static int  hLength;
+STATIC_VAR int  **Qpol;
+STATIC_VAR int  *Q0;
+STATIC_VAR int *Ql;
+STATIC_VAR int  hLength;
 
 
 static int hMinModulweight(intvec *modulweight)
@@ -2317,4 +2317,3 @@ ideal RightColonOperation(ideal S, poly w, int lV)
   Iw = colonIdeal(S, w, lV, Iw, 0);
   return (Iw);
 }
-

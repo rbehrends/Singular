@@ -853,9 +853,8 @@ ezgcd ( const CanonicalForm & FF, const CanonicalForm & GG )
 }
 
 #ifdef HAVE_NTL
-// parameters for heuristic
-static int maxNumEval= 200;
-static int sizePerVars1= 500; //try dense gcd if size/#variables is bigger
+STATIC_VAR int maxNumEval = 200;
+STATIC_VAR int sizePerVars1 = 500; //try dense gcd if size/#variables is bigger
 
 /// Extended Zassenhaus GCD for finite fields.
 /// In case things become too dense we switch to a modular algorithm.
@@ -1467,4 +1466,3 @@ CanonicalForm EZGCD_P( const CanonicalForm & FF, const CanonicalForm & GG )
   return N (d*cand);
 }
 #endif
-

@@ -39,10 +39,9 @@
 #define EXTRABYTES 4
 
 #define DEFPREC        20         // minimum number of digits (output operations)
-size_t gmp_output_digits= DEFPREC;
-
-static gmp_float *gmpRel=NULL;
-static gmp_float *diff=NULL;
+VAR size_t gmp_output_digits = DEFPREC;
+STATIC_VAR gmp_float *gmpRel =NULL;
+STATIC_VAR gmp_float *diff =NULL;
 
 
 /** Set size of mantissa
@@ -801,11 +800,3 @@ void gmp_complex::SmallToZero()
     if (ar < *gmpRel) this->real(0.0);
   }
 }
-
-//%e
-
-// local Variables: ***
-// folded-file: t ***
-// compile-command-1: "make installg" ***
-// compile-command-2: "make install" ***
-// End: ***

@@ -258,4 +258,3 @@ int s_iseof(s_buff F)
   if (F!=NULL) return F->is_eof;
   else         return 1;
 }
-

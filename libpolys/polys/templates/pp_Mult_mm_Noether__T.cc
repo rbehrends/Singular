@@ -82,5 +82,3 @@ LINKAGE poly pp_Mult_mm_Noether__T(poly p, const poly m, const poly spNoether, i
   p_Test(pNext(&rp), ri);
   return pNext(&rp);
 }
-
-

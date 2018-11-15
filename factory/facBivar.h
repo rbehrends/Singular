@@ -303,4 +303,3 @@ coeffBound (const CanonicalForm & f, ///< [in] poly over Z
            );
 
 #endif
-

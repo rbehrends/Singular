@@ -341,4 +341,3 @@ void tryNTLXGCD(zz_pEX& d, zz_pEX& s, zz_pEX& t, const zz_pEX& a,
    mul(t, t, z);
 }
 #endif
-

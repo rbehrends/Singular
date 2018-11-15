@@ -695,5 +695,3 @@ evaluate (const CanonicalForm& f, const CanonicalForm& g,
     result += evaluate (i.coeff(), g, h, powH, v)*power (x, i.exp());
   return result;
 }
-
-

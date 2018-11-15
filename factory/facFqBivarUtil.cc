@@ -1311,4 +1311,3 @@ reverseSubst (CFList& L, const int d, const Variable& x)
   for (CFListIterator i= L; i.hasItem(); i++)
     i.getItem()= reverseSubst (i.getItem(), d, x);
 }
-

@@ -16,21 +16,14 @@
 using namespace std;
 
 #ifdef COUNT_AND_PRINT_OPERATIONS
-long addsPoly        = 0;    /* for the number of additions of two polynomials */
-long multsPoly       = 0;    /* for the number of multiplications of two polynomials */
-long addsPolyForDiv  = 0;    /* for the number of additions of two polynomials for
-                                polynomial division part */
-long multsPolyForDiv = 0;    /* for the number of multiplications of two polynomials
-                                for polynomial division part */
-long multsMon        = 0;    /* for the number of multiplications of two monomials */
-long multsMonForDiv  = 0;    /* for the number of m-m-multiplications for polynomial
-                                division part */
-long savedMultsMFD   = 0;    /* number of m-m-multiplications that could be saved
-                                when polynomial division would be optimal
-                                (if p / t1 = t2 + ..., then t1 * t2 = LT(p), i.e.,
-                                this multiplication need not be performed which
-                                would save one m-m-multiplication) */
-long divsMon         = 0;    /* for the number of divisions of two monomials;
+VAR long addsPoly = 0;
+VAR long multsPoly = 0;
+VAR long addsPolyForDiv = 0;
+VAR long multsPolyForDiv = 0;
+VAR long multsMon = 0;
+VAR long multsMonForDiv = 0;
+VAR long savedMultsMFD = 0;
+VAR long divsMon = 0;    /* for the number of divisions of two monomials;
                                 these are all guaranteed to work, i.e., m1/m2 only
                                 when exponentVector(m1) >= exponentVector(m2) */
 void printCounters (char* prefix, bool resetToZero)
@@ -1554,4 +1547,3 @@ PolyMinorValue PolyMinorProcessor::getMinorPrivateBareiss(const int k,
     return mv;
   }
 }
-

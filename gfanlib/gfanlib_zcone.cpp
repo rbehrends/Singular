@@ -27,7 +27,7 @@ extern "C"
 #endif //HAVE_CDDLIB_SETOPER_H
 #endif //HAVE_CDD_SETOPER_H
 }
-extern "C" time_t dd_statStartTime; /*cddlib*/
+EXTERN_VAR time_t dd_statStartTime; /*cddlib*/
 
 namespace gfan{
         bool isCddlibRequired()

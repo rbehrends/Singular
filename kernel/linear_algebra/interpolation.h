@@ -15,4 +15,3 @@ ideal interpolation(const std::vector<ideal>& L, intvec *v);
 
 
 #endif
-

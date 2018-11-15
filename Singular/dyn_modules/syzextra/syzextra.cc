@@ -59,4 +59,3 @@ ideal id_Tail(const ideal id, const ring r)
 
   return newid;
 }
-

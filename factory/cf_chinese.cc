@@ -278,5 +278,3 @@ void chineseRemainderCached(CFArray &a, CFArray &n, CanonicalForm &xnew, Canonic
 
   xnew = mod(sum , prod);
 }
-// http://rosettacode.org/wiki/Chinese_remainder_theorem#C
-

@@ -20,5 +20,3 @@ void hLookSeries(ideal S, intvec *modulweight, ideal Q=NULL, intvec *wdegree=NUL
 
 void sortMonoIdeal_pCompare(ideal I);
 #endif
-
-

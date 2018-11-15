@@ -126,5 +126,3 @@ number   nlChineseRemainderSym(number *x, number *q,int rl, BOOLEAN sym, CFArray
 
 
 #endif
-
-

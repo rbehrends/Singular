@@ -201,11 +201,3 @@ gaussReducer::getDependence()
     p= fglmVector();
     return ( result );
 }
-// ================================================================================
-
-// ----------------------------------------------------------------------------
-// Local Variables: ***
-// compile-command: "make Singular" ***
-// page-delimiter: "^\\(\\|//!\\)" ***
-// fold-internal-margins: nil ***
-// End: ***

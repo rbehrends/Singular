@@ -763,5 +763,3 @@ extBiFactorize (const CanonicalForm& F,    ///< [in] poly to be factored
 
 #endif
 #endif
-/* FAC_FQ_BIVAR_H */
-

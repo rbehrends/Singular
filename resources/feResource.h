@@ -1,6 +1,8 @@
 #ifndef FERESOURCE_H
 #define FERESOURCE_H
 
+#include "../Singular/globaldefs.h"
+
 #include <sys/param.h>
 
 #define DIR_SEP '/'
@@ -28,8 +30,7 @@ typedef struct feResourceConfig_s
   char*                 value; // what it was set to: may be changed
 } feResourceConfig_s;
 typedef feResourceConfig_s * feResourceConfig;
-
-extern feResourceConfig_s feResourceConfigs[];
+EXTERN_VAR feResourceConfig_s feResourceConfigs[];
 
 // returns value of Resource as read-only string, or NULL
 // if Resource not found
@@ -51,8 +52,7 @@ void feInitResources(const char* argv0);
 // Re-inits resources, should be called after changing env. variables
 void feReInitResources();
 #endif /* end ifdef __cplusplus */
-
-extern char* feArgv0;
+EXTERN_VAR char* feArgv0;
 
 const char fePathSep = ':' ;
 

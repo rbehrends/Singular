@@ -745,5 +745,3 @@ void countedref_shared_load()
   bbxshared->data             = omAlloc0(newstruct_desc_size());
   setBlackboxStuff(bbxshared, "shared");
 }
-
-

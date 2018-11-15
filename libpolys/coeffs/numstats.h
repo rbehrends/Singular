@@ -145,4 +145,3 @@ static inline void number_stats_Print(const char * const msg = NULL)
   ::PrintLn();
 }
 #endif /* NUMSTAT */
-

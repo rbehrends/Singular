@@ -1080,4 +1080,3 @@ static CanonicalForm trycf_content ( const CanonicalForm & f, const CanonicalFor
   }
   return abs( f );
 }
-

@@ -15,11 +15,9 @@
 #include <time.h>
 #include <sys/time.h>
 #include <unistd.h>
-
-int        timerv = 0;
-static double timer_resolution = TIMER_RESOLUTION;
-
-static double mintime = 0.5;
+VAR int        timerv = 0;
+STATIC_VAR double timer_resolution = TIMER_RESOLUTION;
+STATIC_VAR double mintime = 0.5;
 
 void SetTimerResolution(int res)
 {
@@ -53,12 +51,8 @@ void SetMinDisplayTime(double mtime)
 
 #include "reporter/reporter.h"
 #include "kernel/oswrapper/timer.h"
-
-/*3
-* the start time of the timer
-*/
-static int64 siStartTime;
-static int64 startl;
+STATIC_VAR int64 siStartTime;
+STATIC_VAR int64 startl;
 
 /*3
 * temp structure to get the time
@@ -115,7 +109,7 @@ int getTimer()
 * if this time is > mintime sec
 */
 #ifdef EXTEND_TIMER_D
-extern int iiOp;
+EXTERN_VAR int iiOp;
 #endif
 
 void writeTime(const char* v)
@@ -143,9 +137,7 @@ void writeTime(const char* v)
 #endif
   }
 }
-
-/*0 Real timer implementation*/
-int rtimerv = 0;
+VAR int rtimerv = 0;
 static struct timeval  startRl;
 static struct timeval  siStartRTime;
 static struct timezone tzp;

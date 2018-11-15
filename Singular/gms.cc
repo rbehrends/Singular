@@ -138,4 +138,3 @@ BOOLEAN gmsNF(leftv res,leftv h)
 }
 
 #endif /* HAVE_GMS */
-

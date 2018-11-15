@@ -40,4 +40,3 @@ bool isEqual(int *a, int *b, int lower, int upper);
 CanonicalForm firstLC(const CanonicalForm & f);
 
 #endif
-

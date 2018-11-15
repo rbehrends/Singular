@@ -133,4 +133,3 @@ decompress (const CanonicalForm& F,///< [in] compressed, i.e. F.level()<= 2,
            );
 
 #endif
-

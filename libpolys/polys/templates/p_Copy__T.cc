@@ -36,4 +36,3 @@ LINKAGE poly p_Copy__T(poly s_p, const ring r)
 
   return dp.next;
 }
-

@@ -27,11 +27,8 @@
 
 extern void p_Setm_Syz(poly p, ring r,
                        int* Components, long* ShiftedComponents);
-
-/*--------------static variables------------------------*/
-/*---points to the real components, shifted of the actual module-*/
-int *  currcomponents=NULL;
-long *  currShiftedComponents=NULL;
+VAR int *  currcomponents =NULL;
+VAR long *  currShiftedComponents =NULL;
 
 
 /*---counts number of applications of GM-criteria-------*/
@@ -2679,4 +2676,3 @@ syStrategy syLaScala(ideal arg, int& maxlength, intvec* weights)
   if (TEST_OPT_PROT) PrintLn();
   return syzstr;
 }
-

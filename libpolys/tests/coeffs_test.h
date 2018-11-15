@@ -341,13 +341,7 @@ BOOLEAN Test(const n_coeffType type, void* p = NULLp)
 
   return TRUE;
 }
-
-
-
-// We can rely on this file being included exactly once
-// and declare this global variable in the header file.
-//
-static GlobalPrintingFixture globalPrintingFixture;
+STATIC_INST_VAR GlobalPrintingFixture globalPrintingFixture;
 
 
 class CoeffsTestSuite : public CxxTest::TestSuite
@@ -501,4 +495,3 @@ class CoeffsTestSuite : public CxxTest::TestSuite
      n_Delete(&q5, cf);
    }
 };
-

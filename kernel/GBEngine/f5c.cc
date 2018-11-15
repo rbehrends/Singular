@@ -28,4 +28,3 @@ ideal f5cMain(ideal id, ring r) {
 }
 
 #endif
-// HAVE_F5

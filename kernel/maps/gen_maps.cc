@@ -155,6 +155,3 @@ ideal maMapIdeal(const ideal map_id, const ring preimage_r,const ideal image_id,
   ii->rank=((ideal)map_id)->rank;
   return (ideal)m;
 }
-
-
-

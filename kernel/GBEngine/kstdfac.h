@@ -11,4 +11,3 @@
 
 ideal_list kStdfac(ideal F, ideal Q, tHomog h,intvec ** w, ideal D=NULL);
 #endif
-

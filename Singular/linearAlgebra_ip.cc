@@ -102,4 +102,3 @@ lists qrDoubleShift(const matrix A, const number tol1, const number tol2,
   }
   return result;
 }
-

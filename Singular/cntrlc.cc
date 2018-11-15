@@ -60,9 +60,8 @@ NTL_CLIENT
  #ifndef __OPTIMIZE__
    static void stack_trace (char *const*args);
  #endif
-
-si_link pipeLastLink=NULL;
-BOOLEAN singular_in_batchmode=FALSE;
+VAR si_link pipeLastLink =NULL;
+VAR BOOLEAN singular_in_batchmode =FALSE;
 
 void sig_pipe_hdl(int /*sig*/)
 {
@@ -85,16 +84,9 @@ void sig_term_hdl(int /*sig*/)
     m2_end(1);
   }
 }
-
-/*---------------------------------------------------------------------*
- * File scope Variables (Variables shared by several functions in
- *                       the same file )
- *
- *---------------------------------------------------------------------*/
-/* data */
-jmp_buf si_start_jmpbuf;
-int siRandomStart;
-short si_restart=0;
+VAR jmp_buf si_start_jmpbuf;
+VAR int siRandomStart;
+VAR short si_restart =0;
 
 typedef void (*si_hdl_typ)(int);
 
@@ -300,12 +292,7 @@ void sigsegv_handler(int sig)
   exit(0);
 }
 #endif
-
-
-/*2
-* signal handler for SIGINT
-*/
-int sigint_handler_cnt=0;
+VAR int sigint_handler_cnt =0;
 void sigint_handler(int /*sig*/)
 {
   mflush();
@@ -589,4 +576,3 @@ void init_signals()
   si_set_signal(SIGPIPE, (si_hdl_typ)sig_pipe_hdl);
   si_set_signal(SIGTERM, (si_hdl_typ)sig_term_hdl);
 }
-

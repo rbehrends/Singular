@@ -20,16 +20,3 @@
 lib_types type_of_LIB(const char *newlib, char *fullname);
 
 #endif
-
-/*
-#if HAVE_GFANLIB
-#define SI_BUILTIN_GFANLIB(add) add(gfanlib)
-#endif
-#ifdef HAVE_MATHICGB
-# define SI_BUILTIN_MATHIC(add) add(singmathic)
-#endif
-#ifdef EMBED_PYTHON
-//TODO: the line above means that syzextra should be staticly embedded IFF pyobjects do so :(((((
-#define SI_BUILTIN_PYOBJECT(add) add(pyobject) add(syzextra) SI_BUILTIN_GFANLIB(add) SI_BUILTIN_MATHIC(add)
-#endif
-*/

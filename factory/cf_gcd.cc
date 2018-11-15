@@ -342,4 +342,3 @@ lcm ( const CanonicalForm & f, const CanonicalForm & g )
     else
         return ( f / gcd( f, g ) ) * g;
 }
-

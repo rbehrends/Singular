@@ -190,5 +190,3 @@ CFList recoverFactors (CanonicalForm& F,     ///< [in,out] some poly F
                       );
 
 #endif
-/* FAC_FQ_FACTORIZE_UTIL_H */
-

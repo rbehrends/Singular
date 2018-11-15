@@ -56,4 +56,3 @@ LINKAGE poly p_Merge_q__T(poly p, poly q, const ring r)
 #endif
   return pNext(&rp);
 }
-

@@ -3210,18 +3210,3 @@ ideal loNewtonPolytope( const ideal id )
 
   return idr;
 }
-//<-
-
-//%e
-
-//-----------------------------------------------------------------------------
-
-// local Variables: ***
-// folded-file: t ***
-// compile-command-1: "make installg" ***
-// compile-command-2: "make install" ***
-// End: ***
-
-// in folding: C-c x
-// leave fold: C-c y
-//   foldmode: F10

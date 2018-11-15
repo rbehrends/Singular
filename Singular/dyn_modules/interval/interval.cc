@@ -128,13 +128,8 @@ box& box::setInterval(int i, interval *I)
   }
   return *this;
 }
-
-/*
- * TYPE IDs
- */
-
-static int intervalID;
-static int boxID;
+STATIC_VAR int intervalID;
+STATIC_VAR int boxID;
 
 /*
  * INTERVAL FUNCTIONS
@@ -1254,4 +1249,3 @@ extern "C" int SI_MOD_INIT(interval)(SModulFunctions* psModulFunctions)
 
   return MAX_TOK;
 }
-// vim: spell spelllang=en

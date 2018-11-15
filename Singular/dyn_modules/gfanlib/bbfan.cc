@@ -15,8 +15,7 @@
 #include "callgfanlib_conversion.h"
 #include "bbfan.h"
 #include "gfan.h"
-
-int fanID;
+VAR int fanID;
 
 void* bbfan_Init(blackbox* /*b*/)
 {
@@ -1155,18 +1154,3 @@ void bbfan_setup(SModulFunctions* p)
 }
 
 #endif
-// gfan::ZFan commonRefinementCompleteFans(const gfan::ZFan &zf, const gfan::ZFan &zg)
-// {
-//   assume(zf->getAmbientDimension() == zg->getAmbientDimension());
-
-//   gfan::ZFan zfg = gfan::ZFan(zf->getAmbientDimension());
-//   int d = zf->getAmbientDimension();
-//   for (int i=0; i<zf->numberOfConesOfDimension(d,0,1); i++)
-//     for (int j=0; j<zg->numberOfConesOfDimension(d,0,1); j++)
-//     {
-//       gfan::ZCone zc = intersection(zf->getCone(d,i,0,1),zg->getCone(d,j,0,1));
-//       if (zc.dimension()==d) zgf.insert(zc);
-//     }
-
-//   return zfg;
-// }

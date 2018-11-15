@@ -157,5 +157,3 @@ public:
 };
 
 #endif
-/* EXTENSION_INFO_H */
-

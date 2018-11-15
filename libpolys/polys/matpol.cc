@@ -2025,4 +2025,3 @@ BOOLEAN sm_Equal(ideal a, ideal b, const ring R)
   }
   return TRUE;
 }
-

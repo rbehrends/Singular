@@ -20,8 +20,7 @@
 #include "Singular/ipid.h"
 #include "Singular/ipshell.h"
 #include "Singular/attrib.h"
-
-static omBin sattr_bin = omGetSpecBin(sizeof(sattr));
+STATIC_VAR omBin sattr_bin = omGetSpecBin(sizeof(sattr));
 
 void sattr::Print()
 {
@@ -486,4 +485,3 @@ BOOLEAN atKILLATTR2(leftv /*res*/,leftv a,leftv b)
   }
   return FALSE;
 }
-

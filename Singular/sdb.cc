@@ -32,8 +32,8 @@
 // bit 0 force a breakpoint in every line (used for 'n')
 
 int sdb_lines[]={-1,-1,-1,-1,-1,-1,-1,-1};
-char * sdb_files[6];
-int sdb_flags=0;
+VAR char * sdb_files[6];
+VAR int sdb_flags =0;
 
 int sdb_checkline(char f)
 {
@@ -199,8 +199,7 @@ void sdb_edit(procinfo *pi)
   si_unlink(filename);
   omFree(filename);
 }
-
-static char sdb_lastcmd='c';
+STATIC_VAR char sdb_lastcmd ='c';
 
 void sdb(Voice * currentVoice, const char * currLine, int len)
 {
@@ -291,7 +290,7 @@ void sdb(Voice * currentVoice, const char * currLine, int len)
         case 'p':
         {
           p=sdb_find_arg(p);
-	  extern int myynest;
+EXTERN_VAR int myynest;
           Print("variable `%s`at level %d",p,myynest);
           idhdl h=ggetid(p);
           if (h==NULL)

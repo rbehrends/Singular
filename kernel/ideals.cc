@@ -2865,8 +2865,7 @@ void idDelEquals(ideal id)
   }
   omFreeSize((ADDRESS)(id_sort), idsize*sizeof(poly_sort));
 }
-
-static int * id_satstdSaturatingVariables=NULL;
+STATIC_VAR int * id_satstdSaturatingVariables =NULL;
 
 static BOOLEAN id_sat_vars_sp(kStrategy strat)
 {
@@ -3095,19 +3094,3 @@ GbVariant syGetAlgorithm(char *n, const ring r, const ideal /*M*/)
 
   return GbStd; // no conditions for std
 }
-//----------------------------------------------------------------------------
-// GB-algorithms and their pre-conditions
-// std   slimgb  sba singmatic modstd ffmod nfmod groebner
-// +     +       +   -         +      -     -     + coeffs: QQ
-// +     +       +   +         -      -     -     + coeffs: ZZ/p
-// +     +       +   -         ?      -     +     + coeffs: K[a]/f
-// +     +       +   -         ?      +     -     + coeffs: K(a)
-// +     -       +   -         -      -     -     + coeffs: domain, not field
-// +     -       -   -         -      -     -     + coeffs: zero-divisors
-// +     +       +   +         -      ?     ?     + also for modules: C
-// +     +       -   +         -      ?     ?     + also for modules: all orderings
-// +     +       -   -         -      -     -     + exterior algebra
-// +     +       -   -         -      -     -     + G-algebra
-// +     +       +   +         +      +     +     + degree ordering
-// +     -       +   +         +      +     +     + non-degree ordering
-// -     -       -   +         +      +     +     + parallel

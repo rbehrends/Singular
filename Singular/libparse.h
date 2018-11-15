@@ -79,8 +79,7 @@ int yylplex(const char *libname, const char *libfile, lib_style_types *lib_style
            idhdl pl, BOOLEAN autoexport=FALSE, lp_modes=LOAD_LIB);
 
 void reinit_yylp();
-
-extern char * text_buffer;
+EXTERN_VAR char * text_buffer;
 
 #  define YYLP_ERR_NONE    0
 #  define YYLP_DEF_BR2     1
@@ -102,5 +101,3 @@ extern char * text_buffer;
 #  endif
 
 #endif /* LIBPARSE_H */
-
-

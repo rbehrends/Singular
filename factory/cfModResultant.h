@@ -39,4 +39,3 @@ resultantZ (const CanonicalForm& A, ///<[in] some poly
 /*ENDPUBLIC*/
 
 #endif
-

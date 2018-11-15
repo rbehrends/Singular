@@ -287,16 +287,3 @@ public:
 
 
 #endif  // BINOMIAL_H
-
-
-
-
-
-
-
-
-
-
-
-
-

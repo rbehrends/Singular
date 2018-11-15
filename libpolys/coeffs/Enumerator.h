@@ -221,6 +221,3 @@ class IContainer
 
 
 #endif
-/* #ifndef ENUMERATOR_H */
-
-// Vi-modeline: vim: filetype=c:syntax:shiftwidth=2:tabstop=8:textwidth=0:expandtab

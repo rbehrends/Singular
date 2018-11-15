@@ -111,13 +111,6 @@ mprState mprIdealCheck( const ideal theIdeal,
                         BOOLEAN rmatrix= false );
 
 ideal loNewtonPolytope( const ideal id );
-
-extern size_t gmp_output_digits;
+EXTERN_VAR size_t gmp_output_digits;
 //%e
 #endif /*MPR_BASE_H*/
-
-// local Variables: ***
-// folded-file: t ***
-// compile-command-2: "make install" ***
-// compile-command: "make installg" ***
-// End: ***

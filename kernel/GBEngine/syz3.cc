@@ -44,9 +44,8 @@
 #define USE_PROD_CRIT
 #define USE_REGULARITY
 #define WITH_SORT
-//#define FULL_TOTAKE
-int discard_pairs;
-int short_pairs;
+VAR int discard_pairs;
+VAR int short_pairs;
 
 /*3
 * assumes the ideals old_ideal and new_ideal to be homogeneous
@@ -2037,4 +2036,3 @@ syStrategy syKosz(ideal arg,int * length)
 //short_pairs = 0;
   return syzstr;
 }
-

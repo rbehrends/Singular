@@ -228,4 +228,3 @@ const unsigned short List_Support_Variables=8;
 // SUPPORT_VARIABLES_LAST might be the better choice.
 
 #endif  // GLOBALS_H
-

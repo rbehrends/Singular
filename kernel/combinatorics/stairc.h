@@ -29,5 +29,3 @@ void scDegree(ideal  s,intvec *modulweight,ideal Q=NULL);
 ideal scKBase(int deg, ideal  s, ideal Q=NULL, intvec * mv=NULL);
 
 #endif
-
-

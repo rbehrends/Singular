@@ -24,4 +24,3 @@ coeffs flintZnInitCfByName(char *s,n_coeffType n);
 #endif
 
 #endif
-

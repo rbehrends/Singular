@@ -691,4 +691,3 @@ irrCharSeries (const CFList & PS)
     return contract (qsi);
   return ListCFList(CFList (1)) ;
 }
-

@@ -84,9 +84,7 @@ static BOOLEAN  ntDBTest(number a, const char *f, const int l, const coeffs r);
  * coefficients of our numbers, e.g., use ntCoeffs->nAdd to add
  * coefficients of our numbers */
 #define ntCoeffs cf->extRing->cf
-
-
-omBin fractionObjectBin = omGetSpecBin(sizeof(fractionObject));
+VAR omBin fractionObjectBin = omGetSpecBin(sizeof(fractionObject));
 
 /// forward declarations
 static void heuristicGcdCancellation(number a, const coeffs cf);
