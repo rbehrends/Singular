@@ -22,7 +22,7 @@
 #define _p_MemCopy_LengthEight(d, s) do{_p_MemCopy_LengthSeven(d, s); _p_MemCopy(7, d, s);} while(0)
 
 #define _p_MemCopy_Declare(d, s)                \
-  unsigned long* _d = ((unsigned long*) d); \
+  VAR unsigned long* _d = ((unsigned long*) d); \
   const unsigned long* _s = ((unsigned long*) s)
 
 #define p_MemCopy_LengthOne(d, s, length) _p_MemCopy_LengthOne(d, s)

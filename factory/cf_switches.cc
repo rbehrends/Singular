@@ -38,5 +38,5 @@ CFSwitches::CFSwitches ()
   On(SW_USE_QGCD);
 }
 
-CFSwitches cf_glob_switches;
+VAR CFSwitches cf_glob_switches;
 

@@ -30,7 +30,7 @@
 #define _p_MemSum_Declare(r, s1, s2)                \
   const unsigned long* _s1 = ((unsigned long*) s1); \
   const unsigned long* _s2 = ((unsigned long*) s2); \
-  unsigned long* _r = ((unsigned long*) r)
+  VAR unsigned long* _r = ((unsigned long*) r)
 
 #define p_MemSum_LengthOne(r, s1, s2, length) _p_MemSum_LengthOne(r, s1, s2)
 #define p_MemSum_LengthTwo(r, s1, s2, length)   \
@@ -117,7 +117,7 @@ while (0)
 
 #define _p_MemAdd_Declare(r, s)                   \
   const unsigned long* _s = ((unsigned long*) s); \
-  unsigned long* _r = ((unsigned long*) r)
+  VAR unsigned long* _r = ((unsigned long*) r)
 
 #define p_MemAdd_LengthOne(r, s, length) _p_MemAdd_LengthOne(r, s)
 #define p_MemAdd_LengthTwo(r, s, length)   \
@@ -206,7 +206,7 @@ while (0)
 #define _p_MemDiff_Declare(r, s1, s2)                \
   const unsigned long* _s1 = ((unsigned long*) s1); \
   const unsigned long* _s2 = ((unsigned long*) s2); \
-  unsigned long* _r = ((unsigned long*) r)
+  VAR unsigned long* _r = ((unsigned long*) r)
 
 #define p_MemDiff_LengthOne(r, s1, s2, length) _p_MemDiff_LengthOne(r, s1, s2)
 #define p_MemDiff_LengthTwo(r, s1, s2, length)  \
@@ -286,7 +286,7 @@ while (0)
 
 #define _p_MemSub_Declare(r, s)                   \
   const unsigned long* _s = ((unsigned long*) s); \
-  unsigned long* _r = ((unsigned long*) r)
+  VAR unsigned long* _r = ((unsigned long*) r)
 
 #define p_MemSub_LengthGeneral(r, s, length)       \
 do                                                 \
@@ -307,7 +307,7 @@ while (0)
 #define _p_MemAddSub_Declare(r, s, t)              \
   const unsigned long* _s = ((unsigned long*) s);  \
   const unsigned long* _t = ((unsigned long*) t);  \
-  unsigned long* _r = ((unsigned long*) r)
+  VAR unsigned long* _r = ((unsigned long*) r)
 
 #define p_MemAddSub_LengthGeneral(r, s, t, length)  \
 do                                                  \

@@ -9,9 +9,9 @@
 #define MAX_BB_TYPES 256
 // #define BLACKBOX_DEVEL 1
 
-static blackbox* blackboxTable[MAX_BB_TYPES];
-static char *    blackboxName[MAX_BB_TYPES];
-static int blackboxTableCnt=0;
+STATIC_VAR blackbox* blackboxTable[MAX_BB_TYPES];
+STATIC_VAR char *    blackboxName[MAX_BB_TYPES];
+STATIC_VAR int blackboxTableCnt=0;
 #define BLACKBOX_OFFSET (MAX_TOK+1)
 blackbox* getBlackboxStuff(const int t)
 {

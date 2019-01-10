@@ -18,7 +18,7 @@
 #define _p_MemCmp_Declare(s1, s2)                   \
   const unsigned long* _s1 = ((unsigned long*) s1); \
   const unsigned long* _s2 = ((unsigned long*) s2); \
-  REGISTER unsigned long _v1;                       \
+  VAR REGISTER unsigned long _v1;                       \
   REGISTER unsigned long _v2
 
 #define _p_MemCmp_Equal(i, s1, s2, actionE) \
@@ -590,8 +590,8 @@ while (0)
 #define _p_MemCmp_OrdGeneral_Declare(s1, s2)            \
   const unsigned long* _s1 = ((unsigned long*) s1);     \
   const unsigned long* _s2 = ((unsigned long*) s2);     \
-  REGISTER unsigned long _v1;                           \
-  REGISTER unsigned long _v2;                           \
+  VAR REGISTER unsigned long _v1;                           \
+  VAR REGISTER unsigned long _v2;                           \
   REGISTER unsigned long _i
 
 #define _p_MemCmp_OrdGeneral_NotEqual(ordsgn, actionG, actionS) \
@@ -772,8 +772,8 @@ while (0)
   const unsigned long* _s1 = ((unsigned long*) s1); \
   const unsigned long* _s2 = ((unsigned long*) s2); \
   REGISTER const unsigned long _bitmask = bitmask;  \
-  REGISTER unsigned long _v1;                       \
-  REGISTER unsigned long _v2;                       \
+  VAR REGISTER unsigned long _v1;                       \
+  VAR REGISTER unsigned long _v2;                       \
   REGISTER unsigned long _i                         \
 
 

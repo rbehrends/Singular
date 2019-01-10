@@ -165,14 +165,14 @@ to save space for ordinary inputs that do not need much stack.
 */
 #define YYMAXDEPTH MAX_INT_VAL
 
-extern int   yylineno;
-extern FILE* yyin;
+EXTERN_VAR int   yylineno;
+EXTERN_VAR FILE* yyin;
 
 const  char *  currid;
-BOOLEAN    yyInRingConstruction=FALSE;
-BOOLEAN    expected_parms;
-int        cmdtok;
-int        inerror = 0;
+VAR BOOLEAN    yyInRingConstruction=FALSE;
+VAR BOOLEAN    expected_parms;
+VAR int        cmdtok;
+VAR int        inerror = 0;
 
 #define TESTSETINT(a,i)                                \
    if ((a).Typ() != INT_CMD)                           \
@@ -1686,7 +1686,7 @@ yy_symbol_value_print (FILE *yyoutput, int yytype, YYSTYPE const * const yyvalue
 static void
 yy_symbol_value_print (yyoutput, yytype, yyvaluep)
     FILE *yyoutput;
-    int yytype;
+    VAR int yytype;
     YYSTYPE const * const yyvaluep;
 #endif
 {
@@ -1718,7 +1718,7 @@ yy_symbol_print (FILE *yyoutput, int yytype, YYSTYPE const * const yyvaluep)
 static void
 yy_symbol_print (yyoutput, yytype, yyvaluep)
     FILE *yyoutput;
-    int yytype;
+    VAR int yytype;
     YYSTYPE const * const yyvaluep;
 #endif
 {
@@ -1744,7 +1744,7 @@ yy_stack_print (yytype_int16 *yybottom, yytype_int16 *yytop)
 static void
 yy_stack_print (yybottom, yytop)
     yytype_int16 *yybottom;
-    yytype_int16 *yytop;
+    VAR yytype_int16 *yytop;
 #endif
 {
   YYFPRINTF (stderr, "Stack now");
@@ -1775,7 +1775,7 @@ yy_reduce_print (YYSTYPE *yyvsp, int yyrule)
 static void
 yy_reduce_print (yyvsp, yyrule)
     YYSTYPE *yyvsp;
-    int yyrule;
+    VAR int yyrule;
 #endif
 {
   int yynrhs = yyr2[yyrule];
@@ -2053,8 +2053,8 @@ yydestruct (const char *yymsg, int yytype, YYSTYPE *yyvaluep)
 static void
 yydestruct (yymsg, yytype, yyvaluep)
     const char *yymsg;
-    int yytype;
-    YYSTYPE *yyvaluep;
+    VAR int yytype;
+    VAR YYSTYPE *yyvaluep;
 #endif
 {
   YYUSE (yyvaluep);

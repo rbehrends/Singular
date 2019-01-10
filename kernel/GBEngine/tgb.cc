@@ -38,7 +38,7 @@ static const int bundle_size_noro = 10000;
 static const int delay_factor = 3;
 #define ADD_LATER_SIZE 500
 #if 1
-static omBin lm_bin = NULL;
+STATIC_VAR omBin lm_bin = NULL;
 static int add_to_reductors(slimgb_alg* c, poly h, int len, int ecart, BOOLEAN simplified=FALSE);
 static void multi_reduction(red_object* los, int & losl, slimgb_alg* c);
 static void multi_reduce_step(find_erg & erg, red_object* r, slimgb_alg* c);
@@ -1455,15 +1455,15 @@ sorted_pair_node **add_to_basis_ideal_quotient (poly h, slimgb_alg * c,
          pointer=(type*)omReallocAligned(pointer, c->array_lengths*sizeof(type));\
          else pointer=(type*)omAllocAligned(c->array_lengths*sizeof(type));}
 //  BOOLEAN corr=lenS_correct(c->strat);
-  int sugar;
-  int ecart = 0;
+  VAR int sugar;
+  VAR int ecart = 0;
   ++(c->n);
   ++(c->S->ncols);
-  int i, j;
+  VAR int i, j;
   i = c->n - 1;
-  sorted_pair_node **nodes =
+  VAR sorted_pair_node **nodes =
     (sorted_pair_node **) omalloc (sizeof (sorted_pair_node *) * i);
-  int spc = 0;
+  VAR int spc = 0;
   if(c->n > c->array_lengths)
   {
     c->array_lengths = c->array_lengths * 2;
@@ -1685,9 +1685,9 @@ sorted_pair_node **add_to_basis_ideal_quotient (poly h, slimgb_alg * c,
   //now ideal quotient crit
   qsort (nodes, spc, sizeof (sorted_pair_node *), iq_crit);
 
-  sorted_pair_node **nodes_final =
+  VAR sorted_pair_node **nodes_final =
     (sorted_pair_node **) omalloc (sizeof (sorted_pair_node *) * i);
-  int spc_final = 0;
+  VAR int spc_final = 0;
   j = 0;
   while(j < spc)
   {
@@ -2089,7 +2089,7 @@ static void
 linalg_step_modp (poly * p, poly * p_out, int &pn, poly * terms, int tn,
                   slimgb_alg * c)
 {
-  static int export_n = 0;
+  STATIC_VAR int export_n = 0;
   assume (terms[tn - 1] != NULL);
   assume (rField_is_Zp (c->r));
   //I don't do deletes, copies of number_types ...
@@ -4895,7 +4895,7 @@ simple_reducer::~simple_reducer ()
 
 void multi_reduce_step (find_erg & erg, red_object * r, slimgb_alg * c)
 {
-  static int id = 0;
+  STATIC_VAR int id = 0;
   id++;
   unsigned long sev;
   BOOLEAN lt_changed = FALSE;

@@ -44,7 +44,7 @@
 #endif
 static omBin kBucket_bin = omGetSpecBin(sizeof(kBucket));
 #ifdef USE_COEF_BUCKETS
-static int coef_start=1;
+STATIC_VAR int coef_start=1;
 #endif
 //////////////////////////////////////////////////////////////////////////
 ///
